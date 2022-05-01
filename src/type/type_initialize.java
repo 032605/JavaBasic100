@@ -61,6 +61,5 @@ public class type_initialize {
 		char A3 = 'a';
 		System.out.println( (short)A3 );  //97
 		
-		
 	}
 }

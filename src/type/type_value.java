@@ -49,7 +49,7 @@ public class type_value {
 		 */
 		
 		
-		byte b = 100;
+		byte b = 10;
 		short s = 32767;		//32768로 하면 Err. (32767이 최댓값)
 		int i = 2100000000;
 		long l = 7000000000L;	//접미사 붙여주기 l OR L
@@ -63,6 +63,14 @@ public class type_value {
 		System.out.println(Long.MAX_VALUE);
 		System.out.println(b + " " + s + " " + i + " " + l + " " + f + " " + d + " " + c + " " + bl);
 		
-
+		System.out.print("안녕하세요");
+		System.out.print("갓생,,");
+		
+		//printf() > 지시자를 사용 (%d 정수, %f 소수점 형식, %c 문자, %s 문자열, %b 부울, %n 줄바꿈 %o 8진수 %x 16진수)
+		System.out.printf("%d번째 하이 %n 형식 바꿈 -- > %.1f %f %n %b", b, f, f, bl); // 소수점 세팅
+		
+		System.out.printf("10의 8진수는 %o이고 16진수는 %x이다.",b, b);		//12 , a
+		System.out.printf("%x %x",15, 9);	//f , 9
+	
 	}
 }
