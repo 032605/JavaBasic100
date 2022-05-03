@@ -1,6 +1,6 @@
 package operator;
 
-public class operator_arithmeticOperators {
+public class Operator_arithmeticOperators {
 	public static void main(String[] args) {
 		int a, b, c, d, rst;
 		double rst2, rst3, rst4, rst5;
