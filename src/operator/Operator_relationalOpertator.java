@@ -1,6 +1,6 @@
 package operator;
 
-public class operator_relationalOpertator {
+public class Operator_relationalOpertator {
 	public static void main(String[] args) {
 		
 		int kor=70, eng=40, math=70;

@@ -8,7 +8,6 @@ public class Conditional_if {
 		if(math > eng) 
 			System.out.println("hi!");
 		
-		
 		if(eng > 90) {
 			System.out.println("A 학정입니다.");
 			System.out.println("축하해요~");
