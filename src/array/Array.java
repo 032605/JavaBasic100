@@ -17,7 +17,6 @@ public class Array {
 		int[] record = new int[5];
 		double record2[] = new double[100];
 		
-		
 		// 2.
 		double[] record3;
 		record3 = new double[100];
