@@ -41,8 +41,7 @@ public class Array3 {
 		System.out.println(Arrays.toString(arr));		//[1, 2, 3, 4, 5]
 		System.out.println(Arrays.toString(arr_copy));	//[1, 2, 3, 4, 3, 4, 5, 8, 9, 10]
 		
-		
-		//얕은 복사(Shallow Copy) : 복사된 배열이나 원본배열이 변경될 때 서로 간의 값이 같이 변경됩니다.
-		//깊은 복사(Deep Copy) : 복사된 배열이나 원본배열이 변경될 때 서로 간의 값은 바뀌지 않습니다.
+		//얕은 복사(Shallow Copy) : 복사된 배열이나 원본배열이 변경될 때 서로 간의 값이 같이 변경
+		//깊은 복사(Deep Copy) : 복사된 배열이나 원본배열이 변경될 때 서로 간의 값은 바뀌지 않음
 	}
 }
