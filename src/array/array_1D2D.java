@@ -61,5 +61,22 @@ public class array_1D2D {
 		String[] strAr = {"hong", "kim", "park"};
 		
 		System.out.println(strAr[0].charAt(2));	//n
+		System.out.println(strAr[0].length());  //4(hong)
+		
+		for (int n=0; n<strAr.length; n++) {
+			
+			for(int c=0; c<strAr[n].length(); c++) {
+				System.out.print(strAr[n].charAt(c));	//hongkimpark
+			}
+		}
+		System.out.println();
+		
+		//length vs length() : 전자는 배열의 길이를, 후자는 문자열의 길이를 구함.
+		int[] aaa = new int[10];
+		System.out.println(aaa.length);	//10
+		
+		String bbb = "High Way";
+		System.out.println(bbb.length());	//8
+		
 	}
 }
