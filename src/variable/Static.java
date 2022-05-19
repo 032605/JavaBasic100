@@ -3,6 +3,8 @@ package variable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import function.Method;
+
 class Counter {
 	static int count = 0; //static을 붙여줌으로써 메모리 공유함.
 	Counter() {
@@ -34,5 +36,7 @@ public class Static {
 	
 		//Util 클래스 오늘 날짜 구하기
 		System.out.println(Util.getCurrentDate("yyyymmdd"));
+		
+		Method.plus(2, 5);
 	}
 }

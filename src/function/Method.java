@@ -1,7 +1,5 @@
 package function;
 
-import java.util.Scanner;
-
 public class Method {
 	
 	// 메서드 : 다른 언어에서의 함수와 마찬가지로 어떤 특정한 동작이나 처리를 하도록 만들어진 코드 단위. > 재사용성
@@ -63,14 +61,15 @@ public class Method {
 		System.out.println(third);
 		
 		//[4]
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 		
-		System.out.print("소문자를 입력하세요. ===>");
-		String str = sc.next();
+		//System.out.print("소문자를 입력하세요. ===>");
+		//String str = sc.next();
 		
-		String rs = convertCapital(str);
+		//String rs = convertCapital(str);
+		String rs = convertCapital("korea");
 		System.out.println("입력한 소문자의 대문자는 = " + rs);
-		
+	
 	}
 	
 	
