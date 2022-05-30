@@ -40,6 +40,8 @@ public class Class_oop {
 	// 그러나 프로그램 규모가 커지고 협업 과정에서 체게적이고 분업화 시스템으로 개발하고 확장 필요성이 있음
 	// 그런 일련의 과정에서 OOP(객체 지향 프로그래밍)이 만들어지고 발전.
 
+	// 하나의 파일에 2개 이상의 클래스 작성 가능 (O) 
+	// 모두 public 키워드를 붙일 수 있다. (X) // 모두 안 붙일 수 있으며, 아무 클래스 중 아무거나 파일명이 될 수 있음. (O)
 	public static void main(String[] args) {
 		
 		// 객체 생성 
@@ -53,7 +55,12 @@ public class Class_oop {
 		fm.color = "green";
 	
 		// 속성 값 출력
-		System.out.println(fm.price + " " + fm.yr  + " " + fm.color);
+		
+		//천 단위 콤마 붙이기
+		String fm_price = String.format("%,d", fm.price);
+		//DecimalFormat df = new DecimalFormat("###,###");  이 방법도 있음
+		
+		System.out.println(fm_price + " " + fm.yr  + " " + fm.color);
 		
 		// call method 
 		fm.move();
