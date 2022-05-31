@@ -13,10 +13,12 @@ public class Inheritance{
 	// 부모 클래스의 멤버 필드, 메서드는 상속이 가능하나 생성자는 상속이 안됨.
 	// 부모 클래스의 접근 제한자가 private이 경우에는 자식 클래스가 상속받았다 하더라도 접근 불가능.
 	public static void main(String[] args) {
+		//객체 생성
 		iceCream ic = new iceCream();
 		
 		ic.melting();
 		
+		//상속을 통한 초콜릿 아이스크림 객체 생성
 		bestMenu choco = new bestMenu(2000, "chocolate");
 		 
 		choco.melting();
@@ -48,6 +50,10 @@ class bestMenu extends iceCream {
 	
 	
 	bestMenu(int price, String flavor) {
+		// 바로 여기에서 부모 필드의 초기화함! (자식 클래스의 필드를 초기화하기 전에 부모 클래스의 생성자를 호출.)
+		// 다음과 같이 명시적으로 써주어도 됨. (생략해도 컴파일러가 부모 클래스 생성자 호출함) 
+		super();
+		
 		this.price = price;
 		this.flavor = flavor;
 	}
