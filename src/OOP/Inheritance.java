@@ -21,11 +21,19 @@ public class Inheritance{
 		//상속을 통한 초콜릿 아이스크림 객체 생성
 		bestMenu choco = new bestMenu(2000, "chocolate");
 		 
-		choco.melting();
 		System.out.println(choco.price);
 		System.out.println(choco.flavor);
 		System.out.println(choco.hit);	//부모 클래스 필드(변수)
 		System.out.println(choco.part);	//부모 클래스 필드(변수)
+		
+		choco.melting();	//메서드 오버라이딩
+		choco.pop();
+		choco.display();
+		
+		bestMenu greenTea = new bestMenu(3000, "green tea");
+		greenTea.hit = 500;
+		greenTea.display();
+		greenTea.melting();
 	}
 }
 
@@ -68,6 +76,6 @@ class bestMenu extends iceCream {
 	}
 	
 	void display() {
-		System.out.println("flavor : " + this.flavor + " . price : " + this.price);
+		System.out.println("hit : " + this.hit + " . part : " + this.part);
 	}
 }
