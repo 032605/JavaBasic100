@@ -1,6 +1,6 @@
 package OOP;
 
-class Person2 {
+class Creature {
 	// Field
 	private String name;
 	private int age;
@@ -8,9 +8,9 @@ class Person2 {
 	private int weight;
 
 	// Constructor
-	Person2() {}
+	Creature() {}
 	
-	Person2(String name, int age, int height, int weight) {
+	Creature(String name, int age, int height, int weight) {
 		this.name = name;
 		this.age = age;
 		this.height = height;
@@ -58,7 +58,7 @@ class Person2 {
 	}
 }
 
-class Monster extends Person2 {
+class Monster extends Creature {
 	//Field
 	private String num;
 	private int skill;		//1 : √¢, 2 : πÊ∆–, 3:√—
