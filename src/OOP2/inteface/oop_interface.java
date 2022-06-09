@@ -18,9 +18,6 @@ package OOP2.inteface;
 //인터페이스는 extends 표현하지 않고 "구현"의 의미 강조 implements 키워드 사용 > 다중 상속 구현
 
 // 장점 : 메서드의 추상적인 선언과 구체적인 구현을 부분을 분리시킬 수 있다.
-
-// Person 클래스(S) / A 인터페이스(S) / B 인터페이스(S) / Student 클래스(C) / Main 클래스(메인 머스다가 포함, 객체 생성)
 public interface oop_interface {
-	
 	
 }
