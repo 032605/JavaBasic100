@@ -1,6 +1,6 @@
 package type;
 
-public class type_value {
+public class Type_value {
 	// [1] : 기본형 타입(Primitive Data Type) --> 디폴트 값이 존재, NULL이 존재하지 않음(사용하고 싶을 땐 Wrapper 클래스 사용)
 	
 	// 정수형 --> byte(1byte), short(2), int(4), long(8)

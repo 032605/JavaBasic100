@@ -1,6 +1,6 @@
 package type;
 
-public class type_intString {
+public class Type_intString {
 	public static void main(String[] args) {
 		
 		//int형 숫자의 자릿수 구하기

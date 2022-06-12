@@ -2,7 +2,7 @@ package array;
 
 import java.util.Arrays;
 
-public class array_1D2D {
+public class Array_1D2D {
 	public static void main(String[] args) {
 		
 		// String 타입의 참조 변수 3개를 저장하기 위한 공간 생성 > 참조형 변수 각 요소는 기본 값 > null 초기화

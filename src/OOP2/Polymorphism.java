@@ -23,7 +23,7 @@ class Parrot extends Bird {
 	}
 }
 
-public class polymorphism {
+public class Polymorphism {
 	public static void main(String[] args) {
 		
 		// [1] 부모 + 자식 클래스의 모든 자원을 다 쓸 수 있다.

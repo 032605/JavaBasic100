@@ -1,6 +1,6 @@
 package type;
 
-public class type_initialize {
+public class Type_initialize {
 	public static void main(String[] args) {
 		
 		int a; int b = 90;
