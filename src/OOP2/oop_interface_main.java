@@ -44,13 +44,13 @@ interface Action {
 	void train(String name, int training_pay);
 }
 
-class student extends Person implements Allowance, Action{
+class Student extends Person implements Allowance, Action{
 	String name;
 	int age;
 	int weight;
 	
-	student() {}
-	student(String name, int age, int weight) {
+	Student() {}
+	Student(String name, int age, int weight) {
 		super(name, age, weight);
 	}
 
@@ -74,7 +74,7 @@ class student extends Person implements Allowance, Action{
 public class oop_interface_main {
 	public static void main(String[] args) {
 		// 객체 생성
-		student ppl = new student("김피자", 22, 46);
+		Student ppl = new Student("김피자", 22, 46);
 		
 		// 클래스 및 인터페이스 메서드 호출
 		ppl.wash();

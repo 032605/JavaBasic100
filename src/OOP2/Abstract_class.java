@@ -18,7 +18,7 @@ class Animal2 {
 	void fly() {System.out.println("날다.");}
 	
 }
-public class abstract_class {
+public class Abstract_class {
 	public static void main(String[] args) {
 		//[1] : 추상 클래스는 구체적인 내용이 없기 때문에 객체를 생성할 수 없음.
 		//Animal dog = new Animal(); //Err
