@@ -36,7 +36,7 @@ interface Allowance {
 	void out(String name, int price);
 	
 	//JAVA8 이전에는 Interface에서 constant(상수), public abstract method(추상 메소드)만 선언이 가능했었음. (강제성이 강했다)
-	//JAVA8부터 default method, static method도 선언 가능(default method, static method)
+	//JAVA8부터 default method, static method도 선언 가능
 	static void play() { System.out.println("놀다"); }
 }
 
