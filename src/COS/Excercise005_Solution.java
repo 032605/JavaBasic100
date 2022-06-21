@@ -1,5 +1,7 @@
 package COS;
 
+import java.util.Arrays;
+
 public class Excercise005_Solution {
 	//Field
 
@@ -41,6 +43,15 @@ public class Excercise005_Solution {
 			System.out.println("최다 득표 수는 " + maxVal + "표 이므로 과반수 이상입니다. " + winner + "번 후보자는 당선입니다." );
 		else
 			System.out.println("최다 득표 수는 " + maxVal + "표 이므로 과반수 미만입니다. " + winner + "번 후보자는 미당선입니다." );
+		
+		
+		//배열에서 가장 큰 값인 최댓값을 반복문 사용없이 찾아보시오
+		System.out.println(Arrays.toString(candidate));
+		Arrays.sort(candidate);
+		System.out.println(Arrays.toString(candidate));
+		
+		System.out.println("가장 적은 득표 수(최솟값)는 = " + candidate[1]);
+		System.out.println("가장 많은 득표 수(최댓값)는 = " + candidate[candidate.length-1]);
 		
 	}
 }

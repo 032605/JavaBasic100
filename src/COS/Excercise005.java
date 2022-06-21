@@ -1,5 +1,7 @@
 package COS;
 
+import java.util.Arrays;
+
 class Solution {
 	//Method
 	public void solutionMethod(int n, int[] vote_box) {
@@ -38,6 +40,13 @@ class Solution {
 			System.out.println("최다 득표 수는 " + maxVal + "표 이므로 과반수 미만입니다. " + winner + "번 후보자는 미당선입니다." );
 		}
 		
+		//배열에서 가장 큰 값인 최댓값을 반복문 사용없이 찾아보시오
+		System.out.println(Arrays.toString(candidate));
+		Arrays.sort(candidate);
+		System.out.println(Arrays.toString(candidate));
+		
+		System.out.println("가장 적은 득표 수(최솟값)는 = " + candidate[0]);
+		System.out.println("가장 많은 득표 수(최댓값)는 = " + candidate[candidate.length-1]);
 	}
 	
 }
@@ -48,7 +57,7 @@ public class Excercise005 {
 		Solution s1 = new Solution();
 		
 		//[2] 배열 선언
-		int[] vote_box = {2, 3, 2, 2, 2, 2, 2};
+		int[] vote_box = {2, 3, 2, 2, 1, 1, 2};
 		
 		//[3] SolutionMethod 호출
 		//s1.solutionMethod(3, vote_box);
