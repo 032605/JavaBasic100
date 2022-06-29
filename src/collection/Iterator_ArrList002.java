@@ -9,7 +9,8 @@ import java.util.Iterator;
 //		반복문 들어가기 전의 기존 list 배열의 size(length)나 index가 변경되면서 순회 중 데이터가 맞지 않아 오류 발생.
 //		해결] iterator 사용. 순회하고 it.remove() 메서드로 처리하기.
 //2) iterator 객체 생성 순서에 따라서도 발생 등
-
+// Note: Trying to remove items using a for loop or a for-each loop would not work correctly 
+// 		because the collection is changing size at the same time that the code is trying to loop.
 
 public class Iterator_ArrList002 {
 	public static void main(String[] args) {
