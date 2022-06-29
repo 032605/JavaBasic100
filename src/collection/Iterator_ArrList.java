@@ -16,20 +16,45 @@ import java.util.Iterator;
 public class Iterator_ArrList {
 	public static void main(String[] args) {
 		
-		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<String>();	//new ArrayList<>(); 형 타입 생략가능
 		
 		list.add("Aligator");
-		list.add("Hipo");
+		list.add("Hippo");
 		list.add("Ostrich");
 		list.add("Donkey");
 		
+		// 반복자 객체 생성 
+		// Collection 인터페이스 > iterator() 메서드 정의하고 있고 이를 상속받는 것이 List, Set 인터페이스이므로 
+		// List, Set 인터페이스를 상속받아 구현한 클래스들 객체를 통해서 iterator()메서드를 사용할 수 있음.
 		Iterator<String> it = list.iterator();
 		
-		while ( it.hasNext() ) {
-		    String val = it.next();
-		    
-		    System.out.println(val);
-		}   
+		//System.out.println(it.hasNext());	//true
+		//System.out.println(it.next());		//Aligator
 		
+		System.out.println("===============");
+		
+		//Hipo만 출력
+		/*
+		 * while ( it.hasNext() ) { String val = it.next();
+		 * 
+		 * if("Hipo".equals(val)) System.out.println(val);
+		 * 
+		 * }
+		 */
+		
+		//Hipo 요소 삭제
+		while ( it.hasNext() ) {
+		
+			String val = it.next();
+
+			if("Hippo".equals(val)) {
+				it.remove();
+				System.out.println("Hippo 삭제");
+			}
+		}
+		
+		System.out.println("===============");
+		for(String s:list)
+			System.out.println(s);
 	}
 }
