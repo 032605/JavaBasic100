@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array3 {
 	public static void main(String[] args) {
-		//========´ÙÁß¹è¿­
+		//========ë‹¤ì¤‘ë°°ì—´
 		int[] a,b,c;
 		
 		int d[], e[], f[];
@@ -32,16 +32,16 @@ public class Array3 {
 		System.out.println(Arrays.toString(g));	//[0, 0, 0, 0, 0, 0, 0, 0, 0]
 		System.out.println(h);					//10
 		
-		//========¹è¿­À» º¹»çÇÏ´Â ¸Ş¼­µå
+		//========ë°°ì—´ì„ ë³µì‚¬í•˜ëŠ” ë©”ì„œë“œ
 		int[] arr = new int[] {1, 2, 3, 4, 5};
 		int[] arr_copy = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		
-		System.arraycopy(arr, 2, arr_copy, 4, 3);		//ÁöÁ¤ÇÑ ¹è¿­ ¿ä¼Ò µ¤¾î¾²±â
+		System.arraycopy(arr, 2, arr_copy, 4, 3);		//ì§€ì •í•œ ë°°ì—´ ìš”ì†Œ ë®ì–´ì“°ê¸°
 
 		System.out.println(Arrays.toString(arr));		//[1, 2, 3, 4, 5]
 		System.out.println(Arrays.toString(arr_copy));	//[1, 2, 3, 4, 3, 4, 5, 8, 9, 10]
 		
-		//¾èÀº º¹»ç(Shallow Copy) : º¹»çµÈ ¹è¿­ÀÌ³ª ¿øº»¹è¿­ÀÌ º¯°æµÉ ¶§ ¼­·Î °£ÀÇ °ªÀÌ °°ÀÌ º¯°æ
-		//±íÀº º¹»ç(Deep Copy) : º¹»çµÈ ¹è¿­ÀÌ³ª ¿øº»¹è¿­ÀÌ º¯°æµÉ ¶§ ¼­·Î °£ÀÇ °ªÀº ¹Ù²îÁö ¾ÊÀ½
+		//ì–•ì€ ë³µì‚¬(Shallow Copy) : ë³µì‚¬ëœ ë°°ì—´ì´ë‚˜ ì›ë³¸ë°°ì—´ì´ ë³€ê²½ë  ë•Œ ì„œë¡œ ê°„ì˜ ê°’ì´ ê°™ì´ ë³€ê²½
+		//ê¹Šì€ ë³µì‚¬(Deep Copy) : ë³µì‚¬ëœ ë°°ì—´ì´ë‚˜ ì›ë³¸ë°°ì—´ì´ ë³€ê²½ë  ë•Œ ì„œë¡œ ê°„ì˜ ê°’ì€ ë°”ë€Œì§€ ì•ŠìŒ
 	}
 }

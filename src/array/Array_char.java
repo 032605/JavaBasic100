@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class Array_char {
 	public static void main(String[] args) {
-		// code by °­ÀÇ
-		// »ç¿ëÀÚÀÇ ÀÔ·ÂÀ» ¹Ş¾Æ 2Â÷¿ø ¹è¿­À» »ı¼ºÇÏ°í °ªÀ» ÀÔ·Â > ÁßÃ¸ ¹İº¹¹® »ç¿ë Ãâ·Â
-		// ¹è¿­ »ı¼º½Ã »ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·ÂÀ» ¹Ş¾Æ¼­ 2Â÷¿ø ¹è¿­ ¸¸µé±â
+		// code by ê°•ì˜
+		// ì‚¬ìš©ìì˜ ì…ë ¥ì„ ë°›ì•„ 2ì°¨ì› ë°°ì—´ì„ ìƒì„±í•˜ê³  ê°’ì„ ì…ë ¥ > ì¤‘ì²© ë°˜ë³µë¬¸ ì‚¬ìš© ì¶œë ¥
+		// ë°°ì—´ ìƒì„±ì‹œ ì‚¬ìš©ìë¡œë¶€í„° ì…ë ¥ì„ ë°›ì•„ì„œ 2ì°¨ì› ë°°ì—´ ë§Œë“¤ê¸°
 		int row;
 		int col;
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("ÇàÀÇ °¹¼ö¸¦ ÀÔ·ÂÇÏ°í [Enter] Ä¡¼¼¿ä = ");
+		System.out.print("í–‰ì˜ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•˜ê³  [Enter] ì¹˜ì„¸ìš” = ");
 		row = scan.nextInt();
-		System.out.print("¿­ÀÇ °¹¼ö¸¦ ÀÔ·ÂÇÏ°í [Enter] Ä¡¼¼¿ä = ");
+		System.out.print("ì—´ì˜ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•˜ê³  [Enter] ì¹˜ì„¸ìš” = ");
 		col = scan.nextInt();
 		
 		char[][] arr = new char[row][col];
@@ -22,17 +22,17 @@ public class Array_char {
 		String[] strArr = new String[row];
 		
 		for (int i=0; i<row; i++) {
-			// °ª ÀÔ·Â
-			System.out.print( (i+1) +"¹øÂ° Çà¿¡ ÀÔ·ÂÇÒ ¹®ÀÚ " + col + "°³¸¦ ÀÔ·ÂÇÏ°í [Enter] Ä¡¼¼¿ä = ");
+			// ê°’ ì…ë ¥
+			System.out.print( (i+1) +"ë²ˆì§¸ í–‰ì— ì…ë ¥í•  ë¬¸ì " + col + "ê°œë¥¼ ì…ë ¥í•˜ê³  [Enter] ì¹˜ì„¸ìš” = ");
 			strArr[i] = scan.next();
 			
 			for(int j=0; j<col; j++) {
-				// String ¹è¿­ ÇÑ ¿­ÀÇ ¿ä¼Ò ÇÏ³ª¾¿ °¡Á®¿Í¼­ char 2Â÷¿ø ¹è¿­¿¡ ³Ö±â
+				// String ë°°ì—´ í•œ ì—´ì˜ ìš”ì†Œ í•˜ë‚˜ì”© ê°€ì ¸ì™€ì„œ char 2ì°¨ì› ë°°ì—´ì— ë„£ê¸°
 				arr[i][j] = strArr[i].charAt(j);
 			}
 		}
 		
-		//Ãâ·Â
+		//ì¶œë ¥
 		for (int a=0; a<arr.length; a++) {
 			for (int b=0; b<arr[a].length; b++) {
 				System.out.print(arr[a][b]);

@@ -16,7 +16,7 @@ class GenericSample<T> {
 public class Generic003 {
 	public static void main(String[] args) {
 		
-		//[1] °´Ã¼ »ı¼º ==> String
+		//[1] ê°ì²´ ìƒì„± ==> String
 		GenericSample<String> gs = new GenericSample<String>("Generic Example");
 		
 		System.out.println(gs.getObj());
@@ -28,7 +28,7 @@ public class Generic003 {
 		System.out.println(gs2.getObj());
 		gs2.printInfo();
 		
-		//Çüº¯È¯ ¾øÀÌ »ç¿ë
+		//í˜•ë³€í™˜ ì—†ì´ ì‚¬ìš©
 		String str = gs.getObj();
 		System.out.println(str);
 		

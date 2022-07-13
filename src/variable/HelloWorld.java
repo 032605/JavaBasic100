@@ -2,32 +2,32 @@ package variable;
 
 import java.util.Scanner;
 
-//ÀÚ¹Ù ±âº» ÄÚµå ÀÛ¼º ±ÔÄ¢
+//ìžë°” ê¸°ë³¸ ì½”ë“œ ìž‘ì„± ê·œì¹™
 public class HelloWorld {
 		public static void main(String[] args) {
-			System.out.println( "JAVA ¹®Á¦Ç®ÀÌ" );
+			System.out.println( "JAVA ë¬¸ì œí’€ì´" );
 			
 			Scanner boongubbangMachine = new Scanner(System.in);
-			System.out.println("Àç·á¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ìž¬ë£Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 			String a = (String) boongubbangMachine.next();
 			
-			System.out.println("Ãß°¡ÇÒ Àç·á¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ¾øÀ¸¸é °áÁ¦ ÀÔ·Â.");
+			System.out.println("ì¶”ê°€í•  ìž¬ë£Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”. ì—†ìœ¼ë©´ ê²°ì œ ìž…ë ¥.");
 			String b = (String) boongubbangMachine.next();
 			
-			if(b.equals("°áÁ¦")) {
-				System.out.println("Ã³À½ ³ÖÀº Àç·á·Î ºØ¾î»§À» ¸¸µì´Ï´Ù.");
-				System.out.println(a + " ºØ¾î»§ÀÌ ¿Ï¼ºµÇ¾ú½À´Ï´Ù.");
+			if(b.equals("ê²°ì œ")) {
+				System.out.println("ì²˜ìŒ ë„£ì€ ìž¬ë£Œë¡œ ë¶•ì–´ë¹µì„ ë§Œë“­ë‹ˆë‹¤.");
+				System.out.println(a + " ë¶•ì–´ë¹µì´ ì™„ì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 				
 				int price = (int) HelloWorld.payment(b);
 				
-				System.out.println(price + "¿øÀ» ÁÖ¼¼¿ä.");
+				System.out.println(price + "ì›ì„ ì£¼ì„¸ìš”.");
 			} else {
-				System.out.println(a + b + " ºØ¾î»§ÀÌ ¿Ï¼ºµÇ¾ú½À´Ï´Ù.");
+				System.out.println(a + b + " ë¶•ì–´ë¹µì´ ì™„ì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 				HelloWorld.payment(b);
 				
 				int price = (int) HelloWorld.payment(a);
 				
-				System.out.println(price + "¿øÀ» ÁÖ¼¼¿ä.");
+				System.out.println(price + "ì›ì„ ì£¼ì„¸ìš”.");
 			}
 			
 		}
@@ -36,7 +36,7 @@ public class HelloWorld {
 			
 			int price = 0;
 			
-			if (menu.equals("°áÁ¦")) {
+			if (menu.equals("ê²°ì œ")) {
 				price = 1500;
 			} else {
 				price = 2500; 
@@ -48,34 +48,34 @@ public class HelloWorld {
 
 /*
  * 
- * Á¢±ÙÁ¦ÇÑÀÚ Å¬·¡½º¼±¾ð Å¬·¡½ºÀÌ¸§ {
-	Á¢±ÙÁ¦ÇÑÀÚ static ¹ÝÈ¯Å¸ÀÔ ¸ÞÀÎ¸Þ¼­µå(¹®ÀÚ¿­ ¹è¿­ º¯¼ö¸í) {
-		// ±¸ÇöÇÒ ÄÚµå ÀÛ¼º
+ * ì ‘ê·¼ì œí•œìž í´ëž˜ìŠ¤ì„ ì–¸ í´ëž˜ìŠ¤ì´ë¦„ {
+	ì ‘ê·¼ì œí•œìž static ë°˜í™˜íƒ€ìž… ë©”ì¸ë©”ì„œë“œ(ë¬¸ìžì—´ ë°°ì—´ ë³€ìˆ˜ëª…) {
+		// êµ¬í˜„í•  ì½”ë“œ ìž‘ì„±
 	}
  }
  * 
- * (1) Á¢±ÙÁ¦ÇÑÀÚ --> public, private, protected, default(¾Æ¹«°Íµµ ¸í½Ã¾ÈÇÒ ¶§)
- * 			   --> Å¬·¡½º³ª ¸Þ¼­µå¿¡ Á¢±ÙÇÒ ¼ö ÀÖ´Â ¹üÀ§¸¦ ÁöÁ¤ --> Á¢±ÙÁ¦ÇÑÀÚ, Á¢±ÙÁ¦¾îÀÚ 
+ * (1) ì ‘ê·¼ì œí•œìž --> public, private, protected, default(ì•„ë¬´ê²ƒë„ ëª…ì‹œì•ˆí•  ë•Œ)
+ * 			   --> í´ëž˜ìŠ¤ë‚˜ ë©”ì„œë“œì— ì ‘ê·¼í•  ìˆ˜ ìžˆëŠ” ë²”ìœ„ë¥¼ ì§€ì • --> ì ‘ê·¼ì œí•œìž, ì ‘ê·¼ì œì–´ìž 
  * 			   --> private > protected > public 
- * (2) Å¬·¡½º¼±¾ð --> class
- * 			   --> °´Ã¼¸¦ »ý¼ºÇÏ´Â Æ², ÇÁ·¹ÀÓ, °øÀå, ÅÛÇÃ¸´ 
- * (3) Å¬·¡½ºÀÌ¸§ --> Ä«¸áÄÉÀÌ½º(´Ü¾î¿Í ´Ü¾î »çÀÌÀÇ ±¸ºÐ --> ´ë¹®ÀÚ) 
- * (4) ¸Þ¼­µåÀÌ¸§ --> ¸Þ¼­µå¶õ? --> ÇÔ¼ö --> ¾î¶² Æ¯Á¤ÇÑ µ¿ÀÛÀÌ³ª ÀÛ¾÷, ÇàÀ§ µîÀ» ¼öÇàÇÏ´Â °Í.
- *				--> main() ´Ù¸£°Ô ÀÛ¼ºÇÒ ½Ã, ±âº» ¸Þ¼­µå¸¦ Ã£À» ¼ö ¾ø´Ù. ¶ó°í ¿¡·¯ ¹ß»ý
- *				--> ÀÚ¹Ù ½ÇÇàµÇ¸é Á¦ÀÏ ¸ÕÀú ¸ÞÀÎ ¸Þ¼­µå Ã£¾Æ¼­ ½ÇÇà.
- *				--> ±æ°Ô ÀÛ¼ºµÈ ¼Ò½º¿¡¼­ ½ÃÀÛÀÌ ¾îµòÁö ¾Ë ¼ö ¾øÀ¸¸é ¾ÈµÇ¹Ç·Î ½ÃÀÛÁ¡À» ¾Ë·ÁÁÖ´Â ¿ëµµ. --> entry point --> main()
+ * (2) í´ëž˜ìŠ¤ì„ ì–¸ --> class
+ * 			   --> ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” í‹€, í”„ë ˆìž„, ê³µìž¥, í…œí”Œë¦¿ 
+ * (3) í´ëž˜ìŠ¤ì´ë¦„ --> ì¹´ë©œì¼€ì´ìŠ¤(ë‹¨ì–´ì™€ ë‹¨ì–´ ì‚¬ì´ì˜ êµ¬ë¶„ --> ëŒ€ë¬¸ìž) 
+ * (4) ë©”ì„œë“œì´ë¦„ --> ë©”ì„œë“œëž€? --> í•¨ìˆ˜ --> ì–´ë–¤ íŠ¹ì •í•œ ë™ìž‘ì´ë‚˜ ìž‘ì—…, í–‰ìœ„ ë“±ì„ ìˆ˜í–‰í•˜ëŠ” ê²ƒ.
+ *				--> main() ë‹¤ë¥´ê²Œ ìž‘ì„±í•  ì‹œ, ê¸°ë³¸ ë©”ì„œë“œë¥¼ ì°¾ì„ ìˆ˜ ì—†ë‹¤. ë¼ê³  ì—ëŸ¬ ë°œìƒ
+ *				--> ìžë°” ì‹¤í–‰ë˜ë©´ ì œì¼ ë¨¼ì € ë©”ì¸ ë©”ì„œë“œ ì°¾ì•„ì„œ ì‹¤í–‰.
+ *				--> ê¸¸ê²Œ ìž‘ì„±ëœ ì†ŒìŠ¤ì—ì„œ ì‹œìž‘ì´ ì–´ë”˜ì§€ ì•Œ ìˆ˜ ì—†ìœ¼ë©´ ì•ˆë˜ë¯€ë¡œ ì‹œìž‘ì ì„ ì•Œë ¤ì£¼ëŠ” ìš©ë„. --> entry point --> main()
  * 			   
- * (5) ÆÄ¶ó¹ÌÅÍ  --> ¸Þ¼­µå(ÇÔ¼ö) È£Ãâ ½Ã ÇÏ³ª ÀÌ»óÀÇ ÆÄ¶ó¹ÌÅÍ °ªÀ» ³Ö¾î¼­ È£Ãâ.
- * 				--> ÀÎ¼ö(ÆÄ¶ó¹ÌÅÍ)µéÀÇ °ªÀ» ÀúÀåÇÒ º¯¼öµéÀ» ¸í½ÃÇÔ.
- * 				--> args´Â ÇÏ³ªÀÇ º¯¼ö¸íÀÓ. ÀÓÀÇ º¯¼ö¸í °¡´É
- * (6) ¸®ÅÏ Å¸ÀÔ --> void
- * (7) static --> staticÀ¸·Î ¼±¾ðµÈ ÇÔ¼ö(¸Þ¼­µå)³ª º¯¼ö´Â JVM¿¡¼­ ÀÎ½ºÅÏ½º °´Ã¼ÀÇ »ý¼º¾øÀÌ È£Ãâ °¡´É.
- * 				--> °´Ã¼ »ý¼º¾øÀÌ ÇØ´ç ÇÔ¼ö(¸Þ¼­µå)¸¦ È£ÃâÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
- * 				Á¤Àû(static) º¯¼ö¿Í ¸Þ¼Òµå + ½Ì±ÛÅæ ÆÐÅÏ https://wikidocs.net/228
+ * (5) íŒŒë¼ë¯¸í„°  --> ë©”ì„œë“œ(í•¨ìˆ˜) í˜¸ì¶œ ì‹œ í•˜ë‚˜ ì´ìƒì˜ íŒŒë¼ë¯¸í„° ê°’ì„ ë„£ì–´ì„œ í˜¸ì¶œ.
+ * 				--> ì¸ìˆ˜(íŒŒë¼ë¯¸í„°)ë“¤ì˜ ê°’ì„ ì €ìž¥í•  ë³€ìˆ˜ë“¤ì„ ëª…ì‹œí•¨.
+ * 				--> argsëŠ” í•˜ë‚˜ì˜ ë³€ìˆ˜ëª…ìž„. ìž„ì˜ ë³€ìˆ˜ëª… ê°€ëŠ¥
+ * (6) ë¦¬í„´ íƒ€ìž… --> void
+ * (7) static --> staticìœ¼ë¡œ ì„ ì–¸ëœ í•¨ìˆ˜(ë©”ì„œë“œ)ë‚˜ ë³€ìˆ˜ëŠ” JVMì—ì„œ ì¸ìŠ¤í„´ìŠ¤ ê°ì²´ì˜ ìƒì„±ì—†ì´ í˜¸ì¶œ ê°€ëŠ¥.
+ * 				--> ê°ì²´ ìƒì„±ì—†ì´ í•´ë‹¹ í•¨ìˆ˜(ë©”ì„œë“œ)ë¥¼ í˜¸ì¶œí•´ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+ * 				ì •ì (static) ë³€ìˆ˜ì™€ ë©”ì†Œë“œ + ì‹±ê¸€í†¤ íŒ¨í„´ https://wikidocs.net/228
  * 
- * ÀÚ¹Ù ½ÇÇà, static ¸Þ¼­µå¸¦ Ã£¾Æ¼­ ¸ÕÀú ¸Þ¸ð¸®¿¡ ÇÒ´ç½ÃÅ´.
- * static ¸Þ¼­µå°¡ ¿©·¯°³ÀÎ °æ¿ì, °´Ã¼ »ý¼º°ú »ó°ü¾øÀÌ ¸ðµÎ ¸Þ¸ð¸®¿¡ ÇÒ´ç.
- * ±× Áß¿¡ main ¸Þ¼­µå¸¦ °¡Àå ¸ÕÀú ½ÃÀÛÁ¡ÀÇ ¸Þ¼­µå·Î½á È£Ãâ. 
+ * ìžë°” ì‹¤í–‰, static ë©”ì„œë“œë¥¼ ì°¾ì•„ì„œ ë¨¼ì € ë©”ëª¨ë¦¬ì— í• ë‹¹ì‹œí‚´.
+ * static ë©”ì„œë“œê°€ ì—¬ëŸ¬ê°œì¸ ê²½ìš°, ê°ì²´ ìƒì„±ê³¼ ìƒê´€ì—†ì´ ëª¨ë‘ ë©”ëª¨ë¦¬ì— í• ë‹¹.
+ * ê·¸ ì¤‘ì— main ë©”ì„œë“œë¥¼ ê°€ìž¥ ë¨¼ì € ì‹œìž‘ì ì˜ ë©”ì„œë“œë¡œì¨ í˜¸ì¶œ. 
  */
 
 

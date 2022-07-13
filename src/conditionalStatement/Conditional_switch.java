@@ -8,7 +8,7 @@ public class Conditional_switch {
 		Integer age;
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("¿¬·É´ë¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ì—°ë ¹ëŒ€ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		age = scan.nextInt();
 
 		if(age > 10 && age < 20 ) {
@@ -22,7 +22,7 @@ public class Conditional_switch {
 		} else if (age > 50 && age < 60) {
 			age = 50;
 		} else if (age < 10 ) {
-			System.out.println("10¼¼ ÀÌÇÏÀÔ´Ï´Ù. ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("10ì„¸ ì´í•˜ì…ë‹ˆë‹¤. í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			System.exit(0);
 			//return;
 		}
@@ -31,27 +31,27 @@ public class Conditional_switch {
 		
 		switch( age ) {
 			case 10:
-				System.out.println(age + "´ë ÀÔ´Ï´Ù. Âü°í¼­ ÄÚ³Ê´Â A±¸¿ªÀÔ´Ï´Ù.");
-				break;	//break¹®À» »ı·«ÇÏ¸é ´ÙÀ½ÀÇ ÄÉÀÌ½º¹®ÀÇ °á°ú°¡ ¸ÅÄªµÇÁö ¾Ê´õ¶óµµ ÇØ´ç ±¸¹®ÀÌ ½ÇÇà
+				System.out.println(age + "ëŒ€ ì…ë‹ˆë‹¤. ì°¸ê³ ì„œ ì½”ë„ˆëŠ” Aêµ¬ì—­ì…ë‹ˆë‹¤.");
+				break;	//breakë¬¸ì„ ìƒëµí•˜ë©´ ë‹¤ìŒì˜ ì¼€ì´ìŠ¤ë¬¸ì˜ ê²°ê³¼ê°€ ë§¤ì¹­ë˜ì§€ ì•Šë”ë¼ë„ í•´ë‹¹ êµ¬ë¬¸ì´ ì‹¤í–‰
 				
 			case 20:
-				System.out.println(age + "´ë ÀÔ´Ï´Ù. °úÁ¦ ÄÚ³Ê´Â B±¸¿ªÀÔ´Ï´Ù.");
+				System.out.println(age + "ëŒ€ ì…ë‹ˆë‹¤. ê³¼ì œ ì½”ë„ˆëŠ” Bêµ¬ì—­ì…ë‹ˆë‹¤.");
 				break;
 				
 			case 30:
-				System.out.println(age + "´ë ÀÔ´Ï´Ù. ÀÚ±â °è¹ß ÄÚ³Ê´Â C±¸¿ªÀÔ´Ï´Ù.");
+				System.out.println(age + "ëŒ€ ì…ë‹ˆë‹¤. ìê¸° ê³„ë°œ ì½”ë„ˆëŠ” Cêµ¬ì—­ì…ë‹ˆë‹¤.");
 				break;
 				
 			case 40:
-				System.out.println(age + "´ë ÀÔ´Ï´Ù. ÀçÅ×Å© ÄÚ³Ê´Â D±¸¿ªÀÔ´Ï´Ù.");
+				System.out.println(age + "ëŒ€ ì…ë‹ˆë‹¤. ì¬í…Œí¬ ì½”ë„ˆëŠ” Dêµ¬ì—­ì…ë‹ˆë‹¤.");
 				break;
 				
 			case 50:
-				System.out.println(age + "´ë ÀÔ´Ï´Ù. ¼Ò¼³ ÄÚ³Ê´Â E±¸¿ªÀÔ´Ï´Ù.");
+				System.out.println(age + "ëŒ€ ì…ë‹ˆë‹¤. ì†Œì„¤ ì½”ë„ˆëŠ” Eêµ¬ì—­ì…ë‹ˆë‹¤.");
 				break;
 				
-			default :	//¸¸¾à ¸ÅÄªÀÌ µÇ´Â ÄÉÀÌ½º¹®ÀÌ ¾øÀ»¶§ ½ÇÇàµÇ¾ß ÇÒ ÄÚµå¸¦ ÁöÁ¤
-				System.out.println("60´ë ÀÌ»óÀÔ´Ï´Ù. Ä«¿îÅÍ Á÷¿ø¿¡°Ô ¹®ÀÇ¹Ù¶ø´Ï´Ù.");
+			default :	//ë§Œì•½ ë§¤ì¹­ì´ ë˜ëŠ” ì¼€ì´ìŠ¤ë¬¸ì´ ì—†ì„ë•Œ ì‹¤í–‰ë˜ì•¼ í•  ì½”ë“œë¥¼ ì§€ì •
+				System.out.println("60ëŒ€ ì´ìƒì…ë‹ˆë‹¤. ì¹´ìš´í„° ì§ì›ì—ê²Œ ë¬¸ì˜ë°”ëë‹ˆë‹¤.");
 				break;
 		}
 	}

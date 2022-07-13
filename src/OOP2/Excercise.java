@@ -1,6 +1,6 @@
 package OOP2;
 
-// Ãß»ó Å¬·¡½º¿Í »ó¼ÓÀ» »ç¿ëÇÏ¿© ´ÙÇü¼º ¿¹Á¦ ±¸Çö
+// ì¶”ìƒ í´ë˜ìŠ¤ì™€ ìƒì†ì„ ì‚¬ìš©í•˜ì—¬ ë‹¤í˜•ì„± ì˜ˆì œ êµ¬í˜„
 
 abstract class Car {
 	abstract void sound();
@@ -8,38 +8,38 @@ abstract class Car {
 
 class Ambulance extends Car {
 	void sound() {
-		System.out.println("»ß¿ë»ß¿ë");
+		System.out.println("ì‚ìš©ì‚ìš©");
 	}
 }
 
 class Tiller extends Car {
 	void sound() {
-		System.out.println("´úÄÈ´úÄÈ");
+		System.out.println("ëœì»¹ëœì»¹");
 	}
 }
 
 class SportsCar extends Car {
 	void sound() {
-		System.out.println("¾Å");
+		System.out.println("ì”½");
 	}
 }
 
 public class Excercise {
 	public static void main(String[] args) {
 		
-		//Car[] cars = new Car[3];		//°´Ã¼ ¹è¿­ ¼±¾ğ
-		//cars = new Car[] { new Ambulance(), new Tiller(), new SportsCar() };		//cars ¹è¿­ ÃÊ±âÈ­
+		//Car[] cars = new Car[3];		//ê°ì²´ ë°°ì—´ ì„ ì–¸
+		//cars = new Car[] { new Ambulance(), new Tiller(), new SportsCar() };		//cars ë°°ì—´ ì´ˆê¸°í™”
 		Car[] cars = { new Ambulance(), new Tiller(), new SportsCar() };
 		
-		//¸Ş¼­µå È£Ãâ
+		//ë©”ì„œë“œ í˜¸ì¶œ
 		for (int i=0; i<cars.length; i++) {
 			cars[i].sound(); 
 		}
 		
 		System.out.println("===============");
 		
-		//Çâ»óµÈ for¹® »ç¿ë 
-		//Car type º¯¼ö¸í:¹è¿­¸í
+		//í–¥ìƒëœ forë¬¸ ì‚¬ìš© 
+		//Car type ë³€ìˆ˜ëª…:ë°°ì—´ëª…
 		for(Car obj:cars) {
 			//System.out.println(obj);
 			obj.sound();

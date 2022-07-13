@@ -3,7 +3,7 @@ package conditionalStatement;
 public class Iteration {
 	public static void main(String[] args) {
 		
-		//for¹®, while¹®, do~while, Çâ»óµÈ for¹®
+		//forë¬¸, whileë¬¸, do~while, í–¥ìƒëœ forë¬¸
 		for (int i=0; i<10; i++) {
 			System.out.print(i + " ");	//0, 1, 2, 3, 4...,9
 		}
@@ -17,7 +17,7 @@ public class Iteration {
 		System.out.println(" ");
 		
 		// ========================================================================
-		//¾ËÆÄºª 26¹®ÀÚ¸¦ ´ë¹®ÀÚ·Î ¹İº¹¹® Ãâ·Â
+		//ì•ŒíŒŒë²³ 26ë¬¸ìë¥¼ ëŒ€ë¬¸ìë¡œ ë°˜ë³µë¬¸ ì¶œë ¥
 		char str = 65;
 		
 		while(str <= 90) {
@@ -36,7 +36,7 @@ public class Iteration {
 
 		
 		// ========================================================================
-		//È¦¼ö, Â¦¼ö ±¸ÇÏ±â ¹®Á¦¸¦ while ¹İº¹¹® »ç¿ë
+		//í™€ìˆ˜, ì§ìˆ˜ êµ¬í•˜ê¸° ë¬¸ì œë¥¼ while ë°˜ë³µë¬¸ ì‚¬ìš©
 		int num = 1;
 		
 		while(num <= 30) {
@@ -51,7 +51,7 @@ public class Iteration {
 		
 		int number = 6;
 		
-		//while¹®Àº Á¶°Ç½ÄÀÌ ÂüÀÏ ¶§ ÄÚµå ½ÇÇà, do while ¹İº¹¹®Àº ¹«Á¶°Ç ÇÑ¹ø ÀÌ»ó ½ÇÇà!
+		//whileë¬¸ì€ ì¡°ê±´ì‹ì´ ì°¸ì¼ ë•Œ ì½”ë“œ ì‹¤í–‰, do while ë°˜ë³µë¬¸ì€ ë¬´ì¡°ê±´ í•œë²ˆ ì´ìƒ ì‹¤í–‰!
 		do {
 			System.out.println(number);	//7
 			number++;

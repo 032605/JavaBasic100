@@ -1,8 +1,8 @@
 package collection;
 
-//Á¦³×¸¯(Generic)ÀÇ °³³ä°ú ÇÊ¿ä¼º¿¡ ´ëÇØ¼­ ¿¹Á¦ ÄÚµå·Î ¼³¸íÇØº¸½Ã¿À.
-//ÀÌ ¹®Á¦´Â ÀÚ¹Ù ¹®¹ýÁß Á¦³×¸¯¿¡ ´ëÇÑ °³³ä°ú ÇÊ¿ä¼º¿¡ ´ëÇØ¼­ ¾Ë°í ÀÖ´ÂÁö¸¦ ¹¯´Â ¹®Á¦ÀÌ´Ù.
-//¸ðµç Å¸ÀÔÀ» ´Ù ¹Þ´Â Å¬·¡½º¸¦ ¸¸µé¾îº¸½Ã¿À.
+//ì œë„¤ë¦­(Generic)ì˜ ê°œë…ê³¼ í•„ìš”ì„±ì— ëŒ€í•´ì„œ ì˜ˆì œ ì½”ë“œë¡œ ì„¤ëª…í•´ë³´ì‹œì˜¤.
+//ì´ ë¬¸ì œëŠ” ìžë°” ë¬¸ë²•ì¤‘ ì œë„¤ë¦­ì— ëŒ€í•œ ê°œë…ê³¼ í•„ìš”ì„±ì— ëŒ€í•´ì„œ ì•Œê³  ìžˆëŠ”ì§€ë¥¼ ë¬»ëŠ” ë¬¸ì œì´ë‹¤.
+//ëª¨ë“  íƒ€ìž…ì„ ë‹¤ ë°›ëŠ” í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ë³´ì‹œì˜¤.
 
 class Sample {
 	//Field
@@ -19,39 +19,39 @@ class Sample {
 	}
 	
 	void printInfo() {
-		System.out.println(a.getClass().getName());	//°´Ã¼°¡ ¼ÓÇÏ´Â Å¬·¡½ºÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼­µå
+		System.out.println(a.getClass().getName());	//ê°ì²´ê°€ ì†í•˜ëŠ” í´ëž˜ìŠ¤ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œ
 	}
 }
 
 public class Generic {
 	public static void main(String[] args) {
 
-		//[1] °´Ã¼ »ý¼º --> ¹®ÀÚ¿­
-		Sample s1 = new Sample("¾È³çÇÏ¼¼¿ä");
+		//[1] ê°ì²´ ìƒì„± --> ë¬¸ìžì—´
+		Sample s1 = new Sample("ì•ˆë…•í•˜ì„¸ìš”");
 		System.out.println(s1.getA());
 		s1.printInfo();
 		
-		//[2] °´Ã¼ »ý¼º --> ¼ýÀÚ
+		//[2] ê°ì²´ ìƒì„± --> ìˆ«ìž
 		Sample s2 = new Sample(100);
 		System.out.println(s2.getA());
 		s2.printInfo();
 		
-		//[3] °´Ã¼ »ý¼º --> Object
+		//[3] ê°ì²´ ìƒì„± --> Object
 		Sample s3 = new Sample(new Object());	
-		System.out.println(s3.getA());			//°´Ã¼ÀÇ ÁÖ¼Ò °ª Ãâ·Â
+		System.out.println(s3.getA());			//ê°ì²´ì˜ ì£¼ì†Œ ê°’ ì¶œë ¥
 		s3.printInfo();
 		
-		//[4] À§¿Í °°ÀÌ »ç¿ë ½Ã ´ÜÁ¡ => Çü º¯È¯ ÇÊ¿ä
+		//[4] ìœ„ì™€ ê°™ì´ ì‚¬ìš© ì‹œ ë‹¨ì  => í˜• ë³€í™˜ í•„ìš”
 		
-		// s1 (¹®ÀÚ¿­) -> length ¸®ÅÏ X 
+		// s1 (ë¬¸ìžì—´) -> length ë¦¬í„´ X 
 		//String str = s1.getA(); 	//Err 
 		String str = (String) s1.getA();
-		Object strObj = s1.getA();		//Return ½Ã ¹ÝÈ¯ Å¸ÀÔÀÌ Object
+		Object strObj = s1.getA();		//Return ì‹œ ë°˜í™˜ íƒ€ìž…ì´ Object
 
 		System.out.println(str.length());
 		System.out.println(strObj.toString().length());
 		
-		// s2 (¼ýÀÚ) -> ¿¬»ê ºÒ°¡
+		// s2 (ìˆ«ìž) -> ì—°ì‚° ë¶ˆê°€
 		//int num = s2.getA();	//Err
 		int num = (int) s2.getA();
 		Object intObj = s2.getA();

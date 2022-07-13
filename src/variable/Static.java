@@ -6,10 +6,10 @@ import java.util.Date;
 import function.Method;
 
 class Counter {
-	static int count = 0; //staticÀ» ºÙ¿©ÁÜÀ¸·Î½á ¸Ş¸ğ¸® °øÀ¯ÇÔ.
+	static int count = 0; //staticì„ ë¶™ì—¬ì¤Œìœ¼ë¡œì¨ ë©”ëª¨ë¦¬ ê³µìœ í•¨.
 	Counter() {
 		this.count++;
-		System.out.println(count); //this.count¿¡¼­ this Á¦°Å.
+		System.out.println(count); //this.countì—ì„œ this ì œê±°.
 	}
 	
 	public static int getCount() {
@@ -27,14 +27,14 @@ class Util {
 public class Static {
 	public static void main(String[] args) {
 		
-		//Ä«¿îÆÃ (È°¿ë¿¹½Ã : Á¶È¸¼ö)
+		//ì¹´ìš´íŒ… (í™œìš©ì˜ˆì‹œ : ì¡°íšŒìˆ˜)
 		Counter cnt1 = new Counter(); // 1
 		Counter cnt2 = new Counter(); // 2
 		Counter cnt3 = new Counter(); // 3
 
-		System.out.println(Counter.getCount()); // ½ºÅÂÆ½ ¸Ş¼­µå´Â Å¬·¡½º¸¦ ÀÌ¿ëÇÏ¿© È£Ãâ
+		System.out.println(Counter.getCount()); // ìŠ¤íƒœí‹± ë©”ì„œë“œëŠ” í´ë˜ìŠ¤ë¥¼ ì´ìš©í•˜ì—¬ í˜¸ì¶œ
 	
-		//Util Å¬·¡½º ¿À´Ã ³¯Â¥ ±¸ÇÏ±â
+		//Util í´ë˜ìŠ¤ ì˜¤ëŠ˜ ë‚ ì§œ êµ¬í•˜ê¸°
 		System.out.println(Util.getCurrentDate("yyyymmdd"));
 		
 		Method.plus(2, 5);

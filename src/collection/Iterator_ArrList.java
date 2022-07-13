@@ -4,28 +4,28 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 // Iterator
-// ÄÃ·º¼Ç ÇÁ·¹ÀÓ¿öÅ© ³»¿¡´Â ´Ù¾çÇÑ ÄÃ·º¼ÇµéÀÌ ÀÖ´Âµ¥ ¿ä¼Ò(=¿ø¼Ò)¸¦ ÀĞ¾î¿Ã ¶§ Iterator ÀÎÅÍÆäÀÌ½º·Î Ç¥ÁØÈ­ÇÏ°í ÀÖ´Ù.
-// for ¹İº¹¹®À» »ç¿ëÇÏ¿© ¼øÈ¸ÇÒ ‹š > index·Î °¢ ¿ä¼Ò¸¦ ¼øÈ¸ÇÏ³ª Iterator¸¦ ÀÌ¿ëÇÏ¸é Á¶±İ ´õ Æí¸®
-// Iterator´Â ÀÎÅÍÆäÀÌ½º ÁÖ¿ä ¸Ş¼­µå: hasNext(), next(), remove() ¸Ş¼­µå ÀÌ¿ë > ¹İÈ¯Å¸ÀÔ : boolean, Object(Á¦³×¸¯), void
-// hasNext() : ´ÙÀ½ ¿ä¼Ò°¡ ÀÖ´ÂÁö¸¦ °Ë»çÇÏ¿©  true¸¦ ¸®ÅÏ
-// next()	 : ´ÙÀ½ ¿ä¼Ò¸¦ ¸®ÅÏ > ´ÙÀ½ À§Ä¡·Î Ä¿¼­°¡ ÀÌµ¿. Iterator¿¡¼­´Â »èÁ¦ÇÏÁö ¾Ê°í Ä¿¼­¸¸ ÀÌµ¿.
-// remove()	 : Á¦°Å
+// ì»¬ë ‰ì…˜ í”„ë ˆì„ì›Œí¬ ë‚´ì—ëŠ” ë‹¤ì–‘í•œ ì»¬ë ‰ì…˜ë“¤ì´ ìˆëŠ”ë° ìš”ì†Œ(=ì›ì†Œ)ë¥¼ ì½ì–´ì˜¬ ë•Œ Iterator ì¸í„°í˜ì´ìŠ¤ë¡œ í‘œì¤€í™”í•˜ê³  ìˆë‹¤.
+// for ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•˜ì—¬ ìˆœíšŒí•  ë–„ > indexë¡œ ê° ìš”ì†Œë¥¼ ìˆœíšŒí•˜ë‚˜ Iteratorë¥¼ ì´ìš©í•˜ë©´ ì¡°ê¸ˆ ë” í¸ë¦¬
+// IteratorëŠ” ì¸í„°í˜ì´ìŠ¤ ì£¼ìš” ë©”ì„œë“œ: hasNext(), next(), remove() ë©”ì„œë“œ ì´ìš© > ë°˜í™˜íƒ€ì… : boolean, Object(ì œë„¤ë¦­), void
+// hasNext() : ë‹¤ìŒ ìš”ì†Œê°€ ìˆëŠ”ì§€ë¥¼ ê²€ì‚¬í•˜ì—¬  trueë¥¼ ë¦¬í„´
+// next()	 : ë‹¤ìŒ ìš”ì†Œë¥¼ ë¦¬í„´ > ë‹¤ìŒ ìœ„ì¹˜ë¡œ ì»¤ì„œê°€ ì´ë™. Iteratorì—ì„œëŠ” ì‚­ì œí•˜ì§€ ì•Šê³  ì»¤ì„œë§Œ ì´ë™.
+// remove()	 : ì œê±°
 
-// * next() ¸Ş¼­µåÀÇ °æ¿ì ¹è¿­ °ªÀÌ ¾øÀ» ¶§ »ç¿ëÇÒ ¶§ ¿À·ù ¹ß»ı (ÁÖÀÇ. hasNext() ¸Ş¼­µå »ç¿ë ÈÄ È£Ãâ )
+// * next() ë©”ì„œë“œì˜ ê²½ìš° ë°°ì—´ ê°’ì´ ì—†ì„ ë•Œ ì‚¬ìš©í•  ë•Œ ì˜¤ë¥˜ ë°œìƒ (ì£¼ì˜. hasNext() ë©”ì„œë“œ ì‚¬ìš© í›„ í˜¸ì¶œ )
 
 public class Iterator_ArrList {
 	public static void main(String[] args) {
 		
-		ArrayList<String> list = new ArrayList<String>();	//new ArrayList<>(); Çü Å¸ÀÔ »ı·«°¡´É
+		ArrayList<String> list = new ArrayList<String>();	//new ArrayList<>(); í˜• íƒ€ì… ìƒëµê°€ëŠ¥
 		
 		list.add("Aligator");
 		list.add("Hippo");
 		list.add("Ostrich");
 		list.add("Donkey");
 		
-		// ¹İº¹ÀÚ °´Ã¼ »ı¼º 
-		// Collection ÀÎÅÍÆäÀÌ½º > iterator() ¸Ş¼­µå Á¤ÀÇÇÏ°í ÀÖ°í ÀÌ¸¦ »ó¼Ó¹Ş´Â °ÍÀÌ List, Set ÀÎÅÍÆäÀÌ½ºÀÌ¹Ç·Î 
-		// List, Set ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó¹Ş¾Æ ±¸ÇöÇÑ Å¬·¡½ºµé °´Ã¼¸¦ ÅëÇØ¼­ iterator()¸Ş¼­µå¸¦ »ç¿ëÇÒ ¼ö ÀÖÀ½.
+		// ë°˜ë³µì ê°ì²´ ìƒì„± 
+		// Collection ì¸í„°í˜ì´ìŠ¤ > iterator() ë©”ì„œë“œ ì •ì˜í•˜ê³  ìˆê³  ì´ë¥¼ ìƒì†ë°›ëŠ” ê²ƒì´ List, Set ì¸í„°í˜ì´ìŠ¤ì´ë¯€ë¡œ 
+		// List, Set ì¸í„°í˜ì´ìŠ¤ë¥¼ ìƒì†ë°›ì•„ êµ¬í˜„í•œ í´ë˜ìŠ¤ë“¤ ê°ì²´ë¥¼ í†µí•´ì„œ iterator()ë©”ì„œë“œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ.
 		Iterator<String> it = list.iterator();
 		
 		//System.out.println(it.hasNext());	//true
@@ -33,7 +33,7 @@ public class Iterator_ArrList {
 		
 		System.out.println("===============");
 		
-		//Hipo¸¸ Ãâ·Â
+		//Hipoë§Œ ì¶œë ¥
 		/*
 		 * while ( it.hasNext() ) { String val = it.next();
 		 * 
@@ -42,14 +42,14 @@ public class Iterator_ArrList {
 		 * }
 		 */
 		
-		//Hipo ¿ä¼Ò »èÁ¦
+		//Hipo ìš”ì†Œ ì‚­ì œ
 		while ( it.hasNext() ) {
 		
 			String val = it.next();
 
 			if("Hippo".equals(val)) {
 				it.remove();
-				System.out.println("Hippo »èÁ¦");
+				System.out.println("Hippo ì‚­ì œ");
 			}
 		}
 		

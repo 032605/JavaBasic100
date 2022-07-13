@@ -21,44 +21,44 @@ class FarmMachine {
 }
 public class Class_oop {
 
-	//pythonÀº class ÆÄÆ®¿¡ µé¾î°¡¾ßÁö ÀÛ¼ºÇÏÁö¸¸, java´Â class ¹«Á·±Ç
+	//pythonì€ class íŒŒíŠ¸ì— ë“¤ì–´ê°€ì•¼ì§€ ìž‘ì„±í•˜ì§€ë§Œ, javaëŠ” class ë¬´ì¡±ê¶Œ
 	
-	//[1] Å¬·¡½º¶õ? 
-	// Å¬·¡½º¶õ °´Ã¼(¶Ç´Â ÀÎ½ºÅÏ½º)¸¦ »ý¼ºÇÏ´Â ÇÏ³ªÀÇ °øÀå(=Æ², ÇÁ·¹ÀÓ, ÅÛÇÃ¸´, ÆÇÇü µî)ÀÌ´Ù.
-	// ÇÜ¹ö°Å °¡°Ô(class)¿¡¼­ °í°´ÀÌ ÁÖ¹®À» ³ÖÀ¸¸é ÇÜ¹ö°Å°¡ ¸¸µé¾îÁ® ³ª¿È >> ÀÌ°Ô ¹Ù·Î °´Ã¼. 
+	//[1] í´ëž˜ìŠ¤ëž€? 
+	// í´ëž˜ìŠ¤ëž€ ê°ì²´(ë˜ëŠ” ì¸ìŠ¤í„´ìŠ¤)ë¥¼ ìƒì„±í•˜ëŠ” í•˜ë‚˜ì˜ ê³µìž¥(=í‹€, í”„ë ˆìž„, í…œí”Œë¦¿, íŒí˜• ë“±)ì´ë‹¤.
+	// í–„ë²„ê±° ê°€ê²Œ(class)ì—ì„œ ê³ ê°ì´ ì£¼ë¬¸ì„ ë„£ìœ¼ë©´ í–„ë²„ê±°ê°€ ë§Œë“¤ì–´ì ¸ ë‚˜ì˜´ >> ì´ê²Œ ë°”ë¡œ ê°ì²´. 
 	
-	// [2] Å¬·¡½º´Â ¸¸µé°íÀÚ ÇÏ´Â °´Ã¼ÀÇ Æ¯Â¡°ú µ¿ÀÛÀ» ¼³°è
+	// [2] í´ëž˜ìŠ¤ëŠ” ë§Œë“¤ê³ ìž í•˜ëŠ” ê°ì²´ì˜ íŠ¹ì§•ê³¼ ë™ìž‘ì„ ì„¤ê³„
 	
 	// [3] 
-	// °´Ã¼ÀÇ Æ¯Â¡ > ¼Ó¼º(Attribute)
-	// °´Ã¼ÀÇ µ¿ÀÛ > ¸Þ¼­µå(Method) --> ÇÔ¼ö¿Í °ÅÀÇ µ¿ÀÏ
-	// *Python¿¡´Â ÀÏ¹ÝÀûÀ¸·Î ÇÔ¼ö¶ó´Â Ç¥ÇöÀ» ¾²Áö¸¸, Å¬·¡½º ³»¿¡¼­ÀÇ ÇÔ¼ö´Â ¸Þ¼­µå¶ó°í ºÎ¸¥´Ù. °ÅÀÇ ÇÔ¼ö¿Í µ¿ÀÏÇÔ.
+	// ê°ì²´ì˜ íŠ¹ì§• > ì†ì„±(Attribute)
+	// ê°ì²´ì˜ ë™ìž‘ > ë©”ì„œë“œ(Method) --> í•¨ìˆ˜ì™€ ê±°ì˜ ë™ì¼
+	// *Pythonì—ëŠ” ì¼ë°˜ì ìœ¼ë¡œ í•¨ìˆ˜ë¼ëŠ” í‘œí˜„ì„ ì“°ì§€ë§Œ, í´ëž˜ìŠ¤ ë‚´ì—ì„œì˜ í•¨ìˆ˜ëŠ” ë©”ì„œë“œë¼ê³  ë¶€ë¥¸ë‹¤. ê±°ì˜ í•¨ìˆ˜ì™€ ë™ì¼í•¨.
 
-	// [4] why Å¬·¡½º´Â ¿Ö ³ª¿ÔÀ»±î
+	// [4] why í´ëž˜ìŠ¤ëŠ” ì™œ ë‚˜ì™”ì„ê¹Œ
 	
-	// Å¬·¡½º ¾ø¾îµµ °´Ã¼ÀÇ Æ¯Â¡(¼Ó¼º)µéÀ» º¯¼ö·Î Á¤ÀÇ °¡´É, µ¿ÀÛÀº ÇÔ¼ö·Î Á¤ÀÇ °¡´É
-	// ±×·¯³ª ÇÁ·Î±×·¥ ±Ô¸ð°¡ Ä¿Áö°í Çù¾÷ °úÁ¤¿¡¼­ Ã¼°ÔÀûÀÌ°í ºÐ¾÷È­ ½Ã½ºÅÛÀ¸·Î °³¹ßÇÏ°í È®Àå ÇÊ¿ä¼ºÀÌ ÀÖÀ½
-	// ±×·± ÀÏ·ÃÀÇ °úÁ¤¿¡¼­ OOP(°´Ã¼ ÁöÇâ ÇÁ·Î±×·¡¹Ö)ÀÌ ¸¸µé¾îÁö°í ¹ßÀü.
+	// í´ëž˜ìŠ¤ ì—†ì–´ë„ ê°ì²´ì˜ íŠ¹ì§•(ì†ì„±)ë“¤ì„ ë³€ìˆ˜ë¡œ ì •ì˜ ê°€ëŠ¥, ë™ìž‘ì€ í•¨ìˆ˜ë¡œ ì •ì˜ ê°€ëŠ¥
+	// ê·¸ëŸ¬ë‚˜ í”„ë¡œê·¸ëž¨ ê·œëª¨ê°€ ì»¤ì§€ê³  í˜‘ì—… ê³¼ì •ì—ì„œ ì²´ê²Œì ì´ê³  ë¶„ì—…í™” ì‹œìŠ¤í…œìœ¼ë¡œ ê°œë°œí•˜ê³  í™•ìž¥ í•„ìš”ì„±ì´ ìžˆìŒ
+	// ê·¸ëŸ° ì¼ë ¨ì˜ ê³¼ì •ì—ì„œ OOP(ê°ì²´ ì§€í–¥ í”„ë¡œê·¸ëž˜ë°)ì´ ë§Œë“¤ì–´ì§€ê³  ë°œì „.
 
-	// ÇÏ³ªÀÇ ÆÄÀÏ¿¡ 2°³ ÀÌ»óÀÇ Å¬·¡½º ÀÛ¼º °¡´É (O) 
-	// ¸ðµÎ public Å°¿öµå¸¦ ºÙÀÏ ¼ö ÀÖ´Ù. (X) // ¸ðµÎ ¾È ºÙÀÏ ¼ö ÀÖÀ¸¸ç, ¾Æ¹« Å¬·¡½º Áß ¾Æ¹«°Å³ª ÆÄÀÏ¸íÀÌ µÉ ¼ö ÀÖÀ½. (O)
+	// í•˜ë‚˜ì˜ íŒŒì¼ì— 2ê°œ ì´ìƒì˜ í´ëž˜ìŠ¤ ìž‘ì„± ê°€ëŠ¥ (O) 
+	// ëª¨ë‘ public í‚¤ì›Œë“œë¥¼ ë¶™ì¼ ìˆ˜ ìžˆë‹¤. (X) // ëª¨ë‘ ì•ˆ ë¶™ì¼ ìˆ˜ ìžˆìœ¼ë©°, ì•„ë¬´ í´ëž˜ìŠ¤ ì¤‘ ì•„ë¬´ê±°ë‚˜ íŒŒì¼ëª…ì´ ë  ìˆ˜ ìžˆìŒ. (O)
 	public static void main(String[] args) {
 		
-		// °´Ã¼ »ý¼º 
+		// ê°ì²´ ìƒì„± 
 		FarmMachine fm = new FarmMachine();
 	
 		System.out.println(fm);
 		
-		// »ý¼ºµÈ °´Ã¼¿¡ ¼Ó¼º °ª ÀÔ·Â
+		// ìƒì„±ëœ ê°ì²´ì— ì†ì„± ê°’ ìž…ë ¥
 		fm.price = 1000000;
 		fm.yr = 2022;
 		fm.color = "green";
 	
-		// ¼Ó¼º °ª Ãâ·Â
+		// ì†ì„± ê°’ ì¶œë ¥
 		
-		//Ãµ ´ÜÀ§ ÄÞ¸¶ ºÙÀÌ±â
+		//ì²œ ë‹¨ìœ„ ì½¤ë§ˆ ë¶™ì´ê¸°
 		String fm_price = String.format("%,d", fm.price);
-		//DecimalFormat df = new DecimalFormat("###,###");  ÀÌ ¹æ¹ýµµ ÀÖÀ½
+		//DecimalFormat df = new DecimalFormat("###,###");  ì´ ë°©ë²•ë„ ìžˆìŒ
 		
 		System.out.println(fm_price + " " + fm.yr  + " " + fm.color);
 		

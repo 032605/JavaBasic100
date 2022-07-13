@@ -3,7 +3,7 @@ package type;
 public class Type_intString {
 	public static void main(String[] args) {
 		
-		//intÇü ¼ıÀÚÀÇ ÀÚ¸´¼ö ±¸ÇÏ±â
+		//intí˜• ìˆ«ìì˜ ìë¦¿ìˆ˜ êµ¬í•˜ê¸°
 		int num = 12345;
 		String str = "12345";
 		
@@ -11,22 +11,22 @@ public class Type_intString {
 		
 		System.out.println("[1] --> " + str.length());
 		
-		//[2] Á¤¼öÇü > ¹®ÀÚ¿­ º¯È¯
+		//[2] ì •ìˆ˜í˜• > ë¬¸ìì—´ ë³€í™˜
 		String str2 = String.valueOf(num);
 		
 		System.out.println("[2] --> " + str2.length());
 
-		//[3] ¹®ÀÚ¿­ + Á¤¼öÇü 
+		//[3] ë¬¸ìì—´ + ì •ìˆ˜í˜• 
 		System.out.println("[3] --> " + (12345 + 1) );		//123456
 		System.out.println("[3] --> " + str + 1);			//123451
 		
-		//[4] ¹®ÀÚ¿­ > Á¤¼öÇü
+		//[4] ë¬¸ìì—´ > ì •ìˆ˜í˜•
 		
 		System.out.println("[4] --> " + (Integer.valueOf(str2) + 1) );
 	
-		//*valueOf¿Í parseInt Â÷ÀÌÁ¡ : °´Ã¼·Î »ç¿ë or ±âº» ÀÚ·áÇüÀ¸·Î »ç¿ë
-		//1) valueOf() ¸Ş¼­µå´Â ¹®ÀÚ¿­ÀÇ °ªÀ» Á¤¼öÇüÀ¸·Î º¯È¯ÇÑ ´ÙÀ½ Integer °´Ã¼·Î ¸¸µé¾î¼­ ¹İÈ¯. => new Integer(Integer.parseInt(s)) °ªÀÌ ¸®ÅÏ
-		//2) parseInt() ¸Ş¼­µå´Â °á°ú°ªÀ» Ç×»ó int ÇüÀ¸·Î ¸®ÅÏ. ¸®ÅÏ °ªÀº °´Ã¼°¡ ¾Æ´Ñ ±âº» ÀÚ·áÇü(Primitive Type)ÀÓ
+		//*valueOfì™€ parseInt ì°¨ì´ì  : ê°ì²´ë¡œ ì‚¬ìš© or ê¸°ë³¸ ìë£Œí˜•ìœ¼ë¡œ ì‚¬ìš©
+		//1) valueOf() ë©”ì„œë“œëŠ” ë¬¸ìì—´ì˜ ê°’ì„ ì •ìˆ˜í˜•ìœ¼ë¡œ ë³€í™˜í•œ ë‹¤ìŒ Integer ê°ì²´ë¡œ ë§Œë“¤ì–´ì„œ ë°˜í™˜. => new Integer(Integer.parseInt(s)) ê°’ì´ ë¦¬í„´
+		//2) parseInt() ë©”ì„œë“œëŠ” ê²°ê³¼ê°’ì„ í•­ìƒ int í˜•ìœ¼ë¡œ ë¦¬í„´. ë¦¬í„´ ê°’ì€ ê°ì²´ê°€ ì•„ë‹Œ ê¸°ë³¸ ìë£Œí˜•(Primitive Type)ì„
 		
 		int num1 = Integer.valueOf("100");
 		System.out.println("valueOf => " + num1);	//100

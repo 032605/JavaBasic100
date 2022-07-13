@@ -1,59 +1,59 @@
 package type;
 
 public class Type_value {
-	// [1] : ±âº»Çü Å¸ÀÔ(Primitive Data Type) --> µğÆúÆ® °ªÀÌ Á¸Àç, NULLÀÌ Á¸ÀçÇÏÁö ¾ÊÀ½(»ç¿ëÇÏ°í ½ÍÀ» ¶© Wrapper Å¬·¡½º »ç¿ë)
+	// [1] : ê¸°ë³¸í˜• íƒ€ì…(Primitive Data Type) --> ë””í´íŠ¸ ê°’ì´ ì¡´ì¬, NULLì´ ì¡´ì¬í•˜ì§€ ì•ŠìŒ(ì‚¬ìš©í•˜ê³  ì‹¶ì„ ë• Wrapper í´ë˜ìŠ¤ ì‚¬ìš©)
 	
-	// Á¤¼öÇü --> byte(1byte), short(2), int(4), long(8)
-	// *ÀÏ¹İÀûÀ¸·Î int¸¦ ¾²´Â ÀÌÀ¯?
-	// JVMÀÇ ÇÇ¿¬»êÀÚ ½ºÅÃÀÌ ÇÇ¿¬»êÀÚ¸¦ 4 Byte´ÜÀ§·Î ÀúÀåÇÔ > byte(1)³ª short(2)ÀÇ °ªÀ» °è»êÇÒ ¶§´Â 4Byte·Î º¯È¯ÇÏ¿© ¿¬»ê ÈÄ ¼öÇà >> int°¡ °¡Àå È¿À²Àû
-	// È¿À²ÀûÀÎ CPU ½ÇÇàº¸´Ù ¸Ş¸ğ¸®¸¦ Àı¾àÇÏ·Á¸é byte, short »ç¿ë
+	// ì •ìˆ˜í˜• --> byte(1byte), short(2), int(4), long(8)
+	// *ì¼ë°˜ì ìœ¼ë¡œ intë¥¼ ì“°ëŠ” ì´ìœ ?
+	// JVMì˜ í”¼ì—°ì‚°ì ìŠ¤íƒì´ í”¼ì—°ì‚°ìë¥¼ 4 Byteë‹¨ìœ„ë¡œ ì €ì¥í•¨ > byte(1)ë‚˜ short(2)ì˜ ê°’ì„ ê³„ì‚°í•  ë•ŒëŠ” 4Byteë¡œ ë³€í™˜í•˜ì—¬ ì—°ì‚° í›„ ìˆ˜í–‰ >> intê°€ ê°€ì¥ íš¨ìœ¨ì 
+	// íš¨ìœ¨ì ì¸ CPU ì‹¤í–‰ë³´ë‹¤ ë©”ëª¨ë¦¬ë¥¼ ì ˆì•½í•˜ë ¤ë©´ byte, short ì‚¬ìš©
 	
-	// ½Ç¼öÇü --> float(4), double(8)
+	// ì‹¤ìˆ˜í˜• --> float(4), double(8)
 
-	// ¹®ÀÚÇü --> char(2byte) --> ¹®ÀÚ ÇÑ°³ --> Âü°í·Î, ¹®ÀÚ¿­À» ´Ù·ç´Â Å¸ÀÔÀº ¾ø´Ù.
-	// *Java´Â À¯´ÏÄÚµå »ç¿ë
+	// ë¬¸ìí˜• --> char(2byte) --> ë¬¸ì í•œê°œ --> ì°¸ê³ ë¡œ, ë¬¸ìì—´ì„ ë‹¤ë£¨ëŠ” íƒ€ì…ì€ ì—†ë‹¤.
+	// *JavaëŠ” ìœ ë‹ˆì½”ë“œ ì‚¬ìš©
 	
-	// ºÎ¿ïÇü(³í¸®Çü : Âü or °ÅÁş) --> boolean(1byte) --> true, false
+	// ë¶€ìš¸í˜•(ë…¼ë¦¬í˜• : ì°¸ or ê±°ì§“) --> boolean(1byte) --> true, false
 
-	// [2] : ÂüÁ¶Çü Å¸ÀÔ(Reference Data Type) --> À§ ±âº»Çü¿¡ ¼ÓÇÏÁö ¾Ê´Â µ¥ÀÌÅÍÇüµé.
-	// ´ëÇ¥ÀûÀÎ °Íµé --> Å¬·¡½º(class), ¹è¿­(array), ÀÎÅÍÆäÀÌ½º(interface), ¹®ÀÚ¿­(String/immutable)
-	// ÂüÁ¶Çü º¯¼öÀÇ Æ¯Â¡ --> µ¥ÀÌÅÍ°¡ ÀúÀåµÈ ¸Ş¸ğ¸®ÀÇ ÁÖ¼Ò °ªÀ» ÀúÀåÇÏ´Â º¯¼öÀÌ´Ù. 
+	// [2] : ì°¸ì¡°í˜• íƒ€ì…(Reference Data Type) --> ìœ„ ê¸°ë³¸í˜•ì— ì†í•˜ì§€ ì•ŠëŠ” ë°ì´í„°í˜•ë“¤.
+	// ëŒ€í‘œì ì¸ ê²ƒë“¤ --> í´ë˜ìŠ¤(class), ë°°ì—´(array), ì¸í„°í˜ì´ìŠ¤(interface), ë¬¸ìì—´(String/immutable)
+	// ì°¸ì¡°í˜• ë³€ìˆ˜ì˜ íŠ¹ì§• --> ë°ì´í„°ê°€ ì €ì¥ëœ ë©”ëª¨ë¦¬ì˜ ì£¼ì†Œ ê°’ì„ ì €ì¥í•˜ëŠ” ë³€ìˆ˜ì´ë‹¤. 
 
-	// ÀÚ¹ÙÀÇ Primitive Data TypeÀÇ ¹ÙÀÌÆ® Å©±â¿Í ºñÆ® Å©±â¸¦ Ãâ·ÂÇÏ´Â ÄÚµå¸¦ ±¸ÇöÇÏ½Ã¿À.
-	// Á¤¼öÇü Å¸ÀÔ°ú ¹®ÀÚÇü Å¸ÀÔ¿¡ ´ëÇØ¼­¸¸ ±¸ÇöÇÑ´Ù.
-	// ÀÌ¶§, °¢ Å¸ÀÔÀÇ ÃÖ¼ÒÃÖ´ë °ú ÃÖ¼Ú°ªµµ °°ÀÌ ±¸ÇÏ¿© Ãâ·ÂÇÏ½Ã¿À.
+	// ìë°”ì˜ Primitive Data Typeì˜ ë°”ì´íŠ¸ í¬ê¸°ì™€ ë¹„íŠ¸ í¬ê¸°ë¥¼ ì¶œë ¥í•˜ëŠ” ì½”ë“œë¥¼ êµ¬í˜„í•˜ì‹œì˜¤.
+	// ì •ìˆ˜í˜• íƒ€ì…ê³¼ ë¬¸ìí˜• íƒ€ì…ì— ëŒ€í•´ì„œë§Œ êµ¬í˜„í•œë‹¤.
+	// ì´ë•Œ, ê° íƒ€ì…ì˜ ìµœì†ŒìµœëŒ€ ê³¼ ìµœì†Ÿê°’ë„ ê°™ì´ êµ¬í•˜ì—¬ ì¶œë ¥í•˜ì‹œì˜¤.
 	public static void main(String[] args) {
 		
 		System.out.println("Byte");
-		System.out.println("¹ÙÀÌÆ® Å©±â" + Byte.BYTES + " ºñÆ® Å©±â" + Byte.SIZE + " ÃÖ¼ÒÃÖ´ë " + Byte.MIN_VALUE + "~" + Byte.MAX_VALUE);
+		System.out.println("ë°”ì´íŠ¸ í¬ê¸°" + Byte.BYTES + " ë¹„íŠ¸ í¬ê¸°" + Byte.SIZE + " ìµœì†ŒìµœëŒ€ " + Byte.MIN_VALUE + "~" + Byte.MAX_VALUE);
 		
 		System.out.println("Short");
-		System.out.println("¹ÙÀÌÆ® Å©±â" + Short.BYTES + " ºñÆ® Å©±â" + Short.SIZE + " ÃÖ¼ÒÃÖ´ë " + Short.MIN_VALUE + "~" + Byte.MAX_VALUE);
+		System.out.println("ë°”ì´íŠ¸ í¬ê¸°" + Short.BYTES + " ë¹„íŠ¸ í¬ê¸°" + Short.SIZE + " ìµœì†ŒìµœëŒ€ " + Short.MIN_VALUE + "~" + Byte.MAX_VALUE);
 		
 		System.out.println("int");
-		System.out.println("¹ÙÀÌÆ® Å©±â" + Integer.BYTES + " ºñÆ® Å©±â" + Integer.SIZE + " ÃÖ¼ÒÃÖ´ë " + Integer.MIN_VALUE + "~" + Integer.MAX_VALUE);
+		System.out.println("ë°”ì´íŠ¸ í¬ê¸°" + Integer.BYTES + " ë¹„íŠ¸ í¬ê¸°" + Integer.SIZE + " ìµœì†ŒìµœëŒ€ " + Integer.MIN_VALUE + "~" + Integer.MAX_VALUE);
 		
 		System.out.println("Long");
-		System.out.println("¹ÙÀÌÆ® Å©±â" + Long.BYTES + " ºñÆ® Å©±â" + Long.SIZE + " ÃÖ¼ÒÃÖ´ë " + Long.MIN_VALUE + "~" + Long.MAX_VALUE);
+		System.out.println("ë°”ì´íŠ¸ í¬ê¸°" + Long.BYTES + " ë¹„íŠ¸ í¬ê¸°" + Long.SIZE + " ìµœì†ŒìµœëŒ€ " + Long.MIN_VALUE + "~" + Long.MAX_VALUE);
 
-		//¹®ÀÚÇüÀº ÃÖ¼Ú°ª ¹× ÃÖ¼ÒÃÖ´ë  Ãâ·Â ½Ã int Çüº¯È¯ ÇÊ¿ä
+		//ë¬¸ìí˜•ì€ ìµœì†Ÿê°’ ë° ìµœì†ŒìµœëŒ€  ì¶œë ¥ ì‹œ int í˜•ë³€í™˜ í•„ìš”
 		System.out.println("Character");
-		System.out.println("¹ÙÀÌÆ® Å©±â" + Character.BYTES + " ºñÆ® Å©±â" + Character.SIZE + " ÃÖ¼ÒÃÖ´ë " + (int) Character.MIN_VALUE + "~" + (int) Character.MAX_VALUE);
+		System.out.println("ë°”ì´íŠ¸ í¬ê¸°" + Character.BYTES + " ë¹„íŠ¸ í¬ê¸°" + Character.SIZE + " ìµœì†ŒìµœëŒ€ " + (int) Character.MIN_VALUE + "~" + (int) Character.MAX_VALUE);
 		
 		/*
-		 * Byte ¹ÙÀÌÆ® Å©±â1 ºñÆ® Å©±â8 ÃÖ¼ÒÃÖ´ë -128~127 
-		 * Short ¹ÙÀÌÆ® Å©±â2 ºñÆ® Å©±â16 ÃÖ¼ÒÃÖ´ë -32768~127 
-		 * int ¹ÙÀÌÆ® Å©±â4 ºñÆ® Å©±â32 ÃÖ¼ÒÃÖ´ë -2147483648~2147483647 
-		 * Long ¹ÙÀÌÆ® Å©±â8 ºñÆ® Å©±â64 ÃÖ¼ÒÃÖ´ë -9223372036854775808~9223372036854775807 
-		 * Character ¹ÙÀÌÆ® Å©±â2 ºñÆ® Å©±â16 ÃÖ¼ÒÃÖ´ë 0~65535
+		 * Byte ë°”ì´íŠ¸ í¬ê¸°1 ë¹„íŠ¸ í¬ê¸°8 ìµœì†ŒìµœëŒ€ -128~127 
+		 * Short ë°”ì´íŠ¸ í¬ê¸°2 ë¹„íŠ¸ í¬ê¸°16 ìµœì†ŒìµœëŒ€ -32768~127 
+		 * int ë°”ì´íŠ¸ í¬ê¸°4 ë¹„íŠ¸ í¬ê¸°32 ìµœì†ŒìµœëŒ€ -2147483648~2147483647 
+		 * Long ë°”ì´íŠ¸ í¬ê¸°8 ë¹„íŠ¸ í¬ê¸°64 ìµœì†ŒìµœëŒ€ -9223372036854775808~9223372036854775807 
+		 * Character ë°”ì´íŠ¸ í¬ê¸°2 ë¹„íŠ¸ í¬ê¸°16 ìµœì†ŒìµœëŒ€ 0~65535
 		 */
 		
 		
 		byte b = 10;
-		short s = 32767;		//32768·Î ÇÏ¸é Err. (32767ÀÌ ÃÖ´ñ°ª)
+		short s = 32767;		//32768ë¡œ í•˜ë©´ Err. (32767ì´ ìµœëŒ“ê°’)
 		int i = 2100000000;
-		long l = 7000000000L;	//Á¢¹Ì»ç ºÙ¿©ÁÖ±â l OR L
-		float f = 9.8F;			//Á¢¹Ì»ç ºÙ¿©ÁÖ±â f OR F
+		long l = 7000000000L;	//ì ‘ë¯¸ì‚¬ ë¶™ì—¬ì£¼ê¸° l OR L
+		float f = 9.8F;			//ì ‘ë¯¸ì‚¬ ë¶™ì—¬ì£¼ê¸° f OR F
 		double d = 3.14;
 		char c = 'A';
 		boolean bl = false;		//0(X) 1(X) False(X) True(X) true(O)
@@ -63,13 +63,13 @@ public class Type_value {
 		System.out.println(Long.MAX_VALUE);
 		System.out.println(b + " " + s + " " + i + " " + l + " " + f + " " + d + " " + c + " " + bl);
 		
-		System.out.print("¾È³çÇÏ¼¼¿ä");
-		System.out.print("°«»ı,,");
+		System.out.print("ì•ˆë…•í•˜ì„¸ìš”");
+		System.out.print("ê°“ìƒ,,");
 		
-		//printf() > Áö½ÃÀÚ¸¦ »ç¿ë (%d Á¤¼ö, %f ¼Ò¼öÁ¡ Çü½Ä, %c ¹®ÀÚ, %s ¹®ÀÚ¿­, %b ºÎ¿ï, %n ÁÙ¹Ù²Ş %o 8Áø¼ö %x 16Áø¼ö)
-		System.out.printf("%d¹øÂ° ÇÏÀÌ %n Çü½Ä ¹Ù²Ş -- > %.1f %f %n %b", b, f, f, bl); // ¼Ò¼öÁ¡ ¼¼ÆÃ
+		//printf() > ì§€ì‹œìë¥¼ ì‚¬ìš© (%d ì •ìˆ˜, %f ì†Œìˆ˜ì  í˜•ì‹, %c ë¬¸ì, %s ë¬¸ìì—´, %b ë¶€ìš¸, %n ì¤„ë°”ê¿ˆ %o 8ì§„ìˆ˜ %x 16ì§„ìˆ˜)
+		System.out.printf("%dë²ˆì§¸ í•˜ì´ %n í˜•ì‹ ë°”ê¿ˆ -- > %.1f %f %n %b", b, f, f, bl); // ì†Œìˆ˜ì  ì„¸íŒ…
 		
-		System.out.printf("10ÀÇ 8Áø¼ö´Â %oÀÌ°í 16Áø¼ö´Â %xÀÌ´Ù.",b, b);		//12 , a
+		System.out.printf("10ì˜ 8ì§„ìˆ˜ëŠ” %oì´ê³  16ì§„ìˆ˜ëŠ” %xì´ë‹¤.",b, b);		//12 , a
 		System.out.printf("%x %x",15, 9);	//f , 9
 	
 	}

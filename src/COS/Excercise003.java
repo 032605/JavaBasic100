@@ -1,9 +1,9 @@
 package COS;
 
-//COS Pro 2±Þ, 1±Þ¿¡¼­ ÀÚÁÖ ³ª¿À´Â ÆÐÅÏÀÎ ÁßÃ¸ ¹Ýº¹¹® ±¸Á¶
-//continue labelÀÌ¶õ ¹«¾ùÀÎÁö ¼³¸íÇØº¸°í °ü·ÃµÈ ¿¹Á¦¸¦ ÄÚµå·Î ±¸ÇöÇØº¸½Ã¿À.
+//COS Pro 2ê¸‰, 1ê¸‰ì—ì„œ ìžì£¼ ë‚˜ì˜¤ëŠ” íŒ¨í„´ì¸ ì¤‘ì²© ë°˜ë³µë¬¸ êµ¬ì¡°
+//continue labelì´ëž€ ë¬´ì—‡ì¸ì§€ ì„¤ëª…í•´ë³´ê³  ê´€ë ¨ëœ ì˜ˆì œë¥¼ ì½”ë“œë¡œ êµ¬í˜„í•´ë³´ì‹œì˜¤.
 
-// 4*4·Î Â¦¼ö¸¸ Ãâ·Â
+// 4*4ë¡œ ì§ìˆ˜ë§Œ ì¶œë ¥
 
 public class Excercise003 {
 	public static void main(String[] args) {
@@ -12,13 +12,13 @@ public class Excercise003 {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 10; j++) {
 
-				// Ãâ·Â °ª
+				// ì¶œë ¥ ê°’
 				int output = i * 10 + j;
 
-				// Â¦¼ö¸¸ Ãâ·Â
+				// ì§ìˆ˜ë§Œ ì¶œë ¥
 				if (output % 2 != 0) {
 					if (j == 1) {
-						// ÇØ´ç lable¸íÀÌ ¼±¾ðµÈ °÷À¸·Î °¡¼­ ´Ù½Ã ¼öÇà
+						// í•´ë‹¹ lableëª…ì´ ì„ ì–¸ëœ ê³³ìœ¼ë¡œ ê°€ì„œ ë‹¤ì‹œ ìˆ˜í–‰
 						System.out.println();
 						continue outerloop;
 					}

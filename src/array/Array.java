@@ -3,16 +3,16 @@ package array;
 public class Array {
 	public static void main(String[] args) {
 		
-		//¹è¿­ : µ¿ÀÏÇÑ µ¥ÀÌÅÍ Å¸ÀÔÀÇ °ªµéÀ» ÇÏ³ªÀÇ ¹è¿­¸íÀ¸·Î ÀúÀå½ÃÅ³ ¼ö ÀÖ´Â ÀÚ·á±¸Á¶.
-		// ÀÏÀÏÀÌ º¯¼ø ¼±¾ð ÇÊ¿ä X, ÃÊ±âÈ­ °ª ÇÑ¹ø¿¡ ¼¼ÆÃ 
-		// pythonÀº ´Ù¸¥ µ¥ÀÌÅÍ Å¸ÀÔµµ ¹è¿­ ¼±¾ð °¡´É.
+		//ë°°ì—´ : ë™ì¼í•œ ë°ì´í„° íƒ€ìž…ì˜ ê°’ë“¤ì„ í•˜ë‚˜ì˜ ë°°ì—´ëª…ìœ¼ë¡œ ì €ìž¥ì‹œí‚¬ ìˆ˜ ìžˆëŠ” ìžë£Œêµ¬ì¡°.
+		// ì¼ì¼ì´ ë³€ìˆœ ì„ ì–¸ í•„ìš” X, ì´ˆê¸°í™” ê°’ í•œë²ˆì— ì„¸íŒ… 
+		// pythonì€ ë‹¤ë¥¸ ë°ì´í„° íƒ€ìž…ë„ ë°°ì—´ ì„ ì–¸ ê°€ëŠ¥.
 		
-		//µ¥ÀÌÅÍÅ¸ÀÔ[] ¹è¿­¸í = new µ¥ÀÌÅÍÅ¸ÀÔ[¹è¿­Å©±â];
-		//µ¥ÀÌÅÍÅ¸ÀÔ ¹è¿­¸í[] = new µ¥ÀÌÅÍÅ¸ÀÔ[¹è¿­Å©±â];
+		//ë°ì´í„°íƒ€ìž…[] ë°°ì—´ëª… = new ë°ì´í„°íƒ€ìž…[ë°°ì—´í¬ê¸°];
+		//ë°ì´í„°íƒ€ìž… ë°°ì—´ëª…[] = new ë°ì´í„°íƒ€ìž…[ë°°ì—´í¬ê¸°];
 		
-		//¹è¿­ ¼±¾ð > ¹è¿­ Å©±â ÁöÁ¤ > ¹è¿­ °ø°£ °ªÀº ÀÚµ¿À¸·Î ÃÊ±âÈ­ ¼ÂÆÃ(Á¤¼öÇü : 0, ½Ç¼öÇü : 0.0)
+		//ë°°ì—´ ì„ ì–¸ > ë°°ì—´ í¬ê¸° ì§€ì • > ë°°ì—´ ê³µê°„ ê°’ì€ ìžë™ìœ¼ë¡œ ì´ˆê¸°í™” ì…‹íŒ…(ì •ìˆ˜í˜• : 0, ì‹¤ìˆ˜í˜• : 0.0)
 		
-		//Q. »ç¿ø 100¸í¿¡ ´ëÇÑ ½ÇÀû ÀúÀåÇÏ´Â ¹è¿­ ¼±¾ð ¹× Å©±â ÁöÁ¤
+		//Q. ì‚¬ì› 100ëª…ì— ëŒ€í•œ ì‹¤ì  ì €ìž¥í•˜ëŠ” ë°°ì—´ ì„ ì–¸ ë° í¬ê¸° ì§€ì •
 		// 1. 
 		int[] record = new int[5];
 		double record2[] = new double[100];
@@ -23,7 +23,7 @@ public class Array {
 		
 		int size = record3.length;	//100
 		
-		System.out.println("reocrd3ÀÇ »çÀÌÁî " + size);
+		System.out.println("reocrd3ì˜ ì‚¬ì´ì¦ˆ " + size);
 		record[0] = 1;
 		
 		System.out.println(record[0]);	//1
@@ -32,8 +32,8 @@ public class Array {
 		
 		System.out.println(record3[size-1]);	//0.0
 		
-		//¹è¿­ º¯¼ö´Â ÂüÁ¶Çü Å¸ÀÔ > ÇØ´ç ¸Þ¸ð¸® °ø°£À» °¡¸®Å´ >> ÇØ´ç ¸Þ¸ð¸® °ø°£ÀÇ ÁÖ¼Ò °ª(ÂüÁ¶ °ª)À» °¡Áü.
-		//pythonÀº index -1µµ ÀÖÀ½
+		//ë°°ì—´ ë³€ìˆ˜ëŠ” ì°¸ì¡°í˜• íƒ€ìž… > í•´ë‹¹ ë©”ëª¨ë¦¬ ê³µê°„ì„ ê°€ë¦¬í‚´ >> í•´ë‹¹ ë©”ëª¨ë¦¬ ê³µê°„ì˜ ì£¼ì†Œ ê°’(ì°¸ì¡° ê°’)ì„ ê°€ì§.
+		//pythonì€ index -1ë„ ìžˆìŒ
 		
 	}
 }

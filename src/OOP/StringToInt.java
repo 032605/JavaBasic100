@@ -7,14 +7,14 @@ public class StringToInt {
 		
 		System.out.println(a + " + " + b + " = " + a+b);	//1 + 2 = 12
 		
-		// ÀÚ·áÇü È®ÀÎ
+		// ìë£Œí˜• í™•ì¸
 		System.out.println(a.getClass().getName());
 		
-		// parseInt() > Integer Å¬·¡½ºÀÇ staticÀ¸·Î ÁöÁ¤ > °´Ã¼ÀÇ »ı¼º¾øÀÌ ¹Ù·Î "Å¬·¡½º¸í.parseInt()·Î Á÷Á¢ »ç¿ë °¡´É
+		// parseInt() > Integer í´ë˜ìŠ¤ì˜ staticìœ¼ë¡œ ì§€ì • > ê°ì²´ì˜ ìƒì„±ì—†ì´ ë°”ë¡œ "í´ë˜ìŠ¤ëª….parseInt()ë¡œ ì§ì ‘ ì‚¬ìš© ê°€ëŠ¥
 		System.out.println(a + " + " + b + " = " + (Integer.parseInt(a) + Integer.parseInt(b)));	//1 + 2 = 3
 		
-		// Áø¼ö ÁöÁ¤
-		System.out.println("======== Áø¼ö ÁöÁ¤ ========");
+		// ì§„ìˆ˜ ì§€ì •
+		System.out.println("======== ì§„ìˆ˜ ì§€ì • ========");
 		System.out.println(Integer.parseInt("2022"));		//2022
 		System.out.println(Integer.parseInt("2022", 10));	//2022
 		System.out.println(Integer.parseInt("2022", 8));	//1042
@@ -25,8 +25,8 @@ public class StringToInt {
 		System.out.println(Integer.parseInt("D", 16));		//13
 		System.out.println(Integer.parseInt("FF", 16));		//255 (15*16 + 15*1)
 		
-		 //16Áø¼ö 0123456789ABCDEF--
+		 //16ì§„ìˆ˜ 0123456789ABCDEF--
 		
-		System.out.println("======== Áø¼ö ÁöÁ¤ ========");
+		System.out.println("======== ì§„ìˆ˜ ì§€ì • ========");
 	}
 }

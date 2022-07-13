@@ -1,6 +1,6 @@
 package OOP2;
 
-//Person Å¬·¡½º(S) / A ÀÎÅÍÆäÀÌ½º(S) / B ÀÎÅÍÆäÀÌ½º(S) / Student Å¬·¡½º(C) / Main Å¬·¡½º(¸ŞÀÎ ¸Ş¼­µå°¡ Æ÷ÇÔ, °´Ã¼ »ı¼º)
+//Person í´ë˜ìŠ¤(S) / A ì¸í„°í˜ì´ìŠ¤(S) / B ì¸í„°í˜ì´ìŠ¤(S) / Student í´ë˜ìŠ¤(C) / Main í´ë˜ìŠ¤(ë©”ì¸ ë©”ì„œë“œê°€ í¬í•¨, ê°ì²´ ìƒì„±)
 class Person {
 
 	String name;
@@ -10,34 +10,34 @@ class Person {
 	Person(){}
 	
 	Person(String name, int age, int weight){
-		//ÀÎÅÍÆäÀÌ½º ±¸Çö¿¡ ÃÊÁ¡. ÆíÀÇ»ó getter, setter ¾È¾¸
+		//ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ì— ì´ˆì . í¸ì˜ìƒ getter, setter ì•ˆì”€
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
 	}
 	
-	void wash() { System.out.println("¾Ä´Ù"); }
+	void wash() { System.out.println("ì”»ë‹¤"); }
 
-	void study() { System.out.println("°øºÎÇÏ´Ù"); }
+	void study() { System.out.println("ê³µë¶€í•˜ë‹¤"); }
 
-	void play() { System.out.println("³î´Ù"); }
+	void play() { System.out.println("ë†€ë‹¤"); }
 
 }
 
 interface Allowance {
-	// (Âü°í) gillog : [Java] Interface (2020.11.27)
+	// (ì°¸ê³ ) gillog : [Java] Interface (2020.11.27)
 
-	// º¯¼öX »ó¼ö ÁöÁ¤! : public static final (ÀÌ°Íµµ ¹Ù²ï°ÇÁö È®ÀÎÇØº¸±â)
-	// ÀÎÅÍÆäÀÌ½º ³» ¸ğµç ¸â¹ö ÇÊµå(º¯¼ö)´Â public static finalÀÌ¿©¾ß ÇÔ (»ı·« °¡´É, ÄÄÆÄÀÏÀÌ ÀÚµ¿À¸·Î ºÙ¿©ÁÜ)
-	public static final String aaa = "»ó¼ö Ãâ·Â";
+	// ë³€ìˆ˜X ìƒìˆ˜ ì§€ì •! : public static final (ì´ê²ƒë„ ë°”ë€ê±´ì§€ í™•ì¸í•´ë³´ê¸°)
+	// ì¸í„°í˜ì´ìŠ¤ ë‚´ ëª¨ë“  ë©¤ë²„ í•„ë“œ(ë³€ìˆ˜)ëŠ” public static finalì´ì—¬ì•¼ í•¨ (ìƒëµ ê°€ëŠ¥, ì»´íŒŒì¼ì´ ìë™ìœ¼ë¡œ ë¶™ì—¬ì¤Œ)
+	public static final String aaa = "ìƒìˆ˜ ì¶œë ¥";
 	int bbb =100;
 	
 	void in(String name, int price);
 	void out(String name, int price);
 	
-	//JAVA8 ÀÌÀü¿¡´Â Interface¿¡¼­ constant(»ó¼ö), public abstract method(Ãß»ó ¸Ş¼Òµå)¸¸ ¼±¾ğÀÌ °¡´ÉÇß¾úÀ½. (°­Á¦¼ºÀÌ °­Çß´Ù)
-	//JAVA8ºÎÅÍ default method, static methodµµ ¼±¾ğ °¡´É
-	static void play() { System.out.println("³î´Ù"); }
+	//JAVA8 ì´ì „ì—ëŠ” Interfaceì—ì„œ constant(ìƒìˆ˜), public abstract method(ì¶”ìƒ ë©”ì†Œë“œ)ë§Œ ì„ ì–¸ì´ ê°€ëŠ¥í–ˆì—ˆìŒ. (ê°•ì œì„±ì´ ê°•í–ˆë‹¤)
+	//JAVA8ë¶€í„° default method, static methodë„ ì„ ì–¸ ê°€ëŠ¥
+	static void play() { System.out.println("ë†€ë‹¤"); }
 }
 
 interface Action {
@@ -56,38 +56,38 @@ class Student extends Person implements Allowance, Action{
 
 	@Override
 	public void in(String name, int price) {
-		System.out.println(name + "¿¡°Ô¼­ " + price + "¿øÀ» ¹Ş¾Ò½À´Ï´Ù.");
+		System.out.println(name + "ì—ê²Œì„œ " + price + "ì›ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void out(String name, int price) {
-		System.out.println(price + "¿øÀ» ÁöÃâÇß½À´Ï´Ù. ÁöÃâ ¿ëµµ : [" + name + "]");
+		System.out.println(price + "ì›ì„ ì§€ì¶œí–ˆìŠµë‹ˆë‹¤. ì§€ì¶œ ìš©ë„ : [" + name + "]");
 	}
 	
 	@Override
 	public void train(String name, int training_pay) {
-		System.out.println("[ÀÔ±İ] " + name + " | "+ training_pay + "¿ø");
+		System.out.println("[ì…ê¸ˆ] " + name + " | "+ training_pay + "ì›");
 	}
 
 }
 
 public class oop_interface_main {
 	public static void main(String[] args) {
-		// °´Ã¼ »ı¼º
-		Student ppl = new Student("±èÇÇÀÚ", 22, 46);
+		// ê°ì²´ ìƒì„±
+		Student ppl = new Student("ê¹€í”¼ì", 22, 46);
 		
-		// Å¬·¡½º ¹× ÀÎÅÍÆäÀÌ½º ¸Ş¼­µå È£Ãâ
+		// í´ë˜ìŠ¤ ë° ì¸í„°í˜ì´ìŠ¤ ë©”ì„œë“œ í˜¸ì¶œ
 		ppl.wash();
 		ppl.study();
 		ppl.play();
-		ppl.in("¾Æºü", 10000);
+		ppl.in("ì•„ë¹ ", 10000);
 		ppl.out("GS25", 1000);
-		ppl.train("¿ù±Ş", 5000000);
+		ppl.train("ì›”ê¸‰", 5000000);
 		
-		// interface ³» static method È£Ãâ
+		// interface ë‚´ static method í˜¸ì¶œ
 		Allowance.play();
 		
-		// »ó¼ö ÇÊµå »ç¿ë (°´Ã¼ »ı¼º or ÀÎÅÍÆäÀÌ½º ³» »ó¼ö ¹Ù·Î)
+		// ìƒìˆ˜ í•„ë“œ ì‚¬ìš© (ê°ì²´ ìƒì„± or ì¸í„°í˜ì´ìŠ¤ ë‚´ ìƒìˆ˜ ë°”ë¡œ)
 		System.out.println(ppl.aaa);
 		System.out.println(Allowance.bbb);
 	}

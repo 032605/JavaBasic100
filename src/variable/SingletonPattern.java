@@ -9,14 +9,14 @@ class Singleton {
     
     public static Singleton getInstance() {
     	
-    	//¸Ş¼­µå È£ÃâÇÔÀ¸·Î½á ½Ì±ÛÅæ ÆĞÅÏ ÀÇ¹Ì°¡ ¾ø¾îÁö¹Ç·Î nullÀÌ¸é ½Ì±ÛÅæ »ı¼º
+    	//ë©”ì„œë“œ í˜¸ì¶œí•¨ìœ¼ë¡œì¨ ì‹±ê¸€í†¤ íŒ¨í„´ ì˜ë¯¸ê°€ ì—†ì–´ì§€ë¯€ë¡œ nullì´ë©´ ì‹±ê¸€í†¤ ìƒì„±
     	if(single == null) {
-    		single =  new Singleton(); // °°Àº Å¬·¡½ºÀÌ¹Ç·Î »ı¼ºÀÚ È£ÃâÀÌ °¡´ÉÇÏ´Ù.
+    		single =  new Singleton(); // ê°™ì€ í´ë˜ìŠ¤ì´ë¯€ë¡œ ìƒì„±ì í˜¸ì¶œì´ ê°€ëŠ¥í•˜ë‹¤.
     	}
     	
     	return single;
 
-    	//nullÃ¼Å© ¾ÈÇØÁÙ ¶§ singleton <> singleton2
+    	//nullì²´í¬ ì•ˆí•´ì¤„ ë•Œ singleton <> singleton2
     	//return new Singleton();
     }
 }

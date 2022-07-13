@@ -7,20 +7,20 @@ public class Excercise004 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("row °ªÀ» ÀÔ·Â ¡å");
+		System.out.println("row ê°’ì„ ì…ë ¥ â–¼");
 		int row = sc.nextInt();
 		
-		System.out.println("col °ªÀ» ÀÔ·Â ¡å");
+		System.out.println("col ê°’ì„ ì…ë ¥ â–¼");
 		int col = sc.nextInt();
 		
 		char[][] arr = new char[row][col];
 		
 		for (int i=0; i<row; i++) {
 			for(int j=0; j<col; j++) {
-				arr[i][j] = '¡à';
+				arr[i][j] = 'â–¡';
 				
 				if(i == (row/2) && j == (col/2))
-					arr[i][j] = '¡Ú';
+					arr[i][j] = 'â˜…';
 					
 				System.out.print(arr[i][j] + " ");
 				

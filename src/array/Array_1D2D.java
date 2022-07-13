@@ -5,41 +5,41 @@ import java.util.Arrays;
 public class Array_1D2D {
 	public static void main(String[] args) {
 		
-		// String Å¸ÀÔÀÇ ÂüÁ¶ º¯¼ö 3°³¸¦ ÀúÀåÇÏ±â À§ÇÑ °ø°£ »ı¼º > ÂüÁ¶Çü º¯¼ö °¢ ¿ä¼Ò´Â ±âº» °ª > null ÃÊ±âÈ­
-		// new °ø°£ »ı¼º. ÁÖ¼Ò °ª ¸®ÅÏ. arr°¡ ÁÖ¼Ò °ª ±â¾ï
+		// String íƒ€ì…ì˜ ì°¸ì¡° ë³€ìˆ˜ 3ê°œë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ê³µê°„ ìƒì„± > ì°¸ì¡°í˜• ë³€ìˆ˜ ê° ìš”ì†ŒëŠ” ê¸°ë³¸ ê°’ > null ì´ˆê¸°í™”
+		// new ê³µê°„ ìƒì„±. ì£¼ì†Œ ê°’ ë¦¬í„´. arrê°€ ì£¼ì†Œ ê°’ ê¸°ì–µ
 		String[] arr = new String[3];
 		
 		System.out.println(Arrays.toString(arr));
 		
-		//2Â÷¿ø ¹è¿­
-		//µ¿ºÏ¾Æ½Ã¾Æ : ÇÑ±¹, Áß±¹, ÀÏº» / µ¿³²¾Æ½Ã¾Æ : ÅÂ±¹, º£Æ®³², ÇÊ¸®ÇÉ (2*3)
-		String[][] asia = { {"ÇÑ±¹", "Áß±¹", "ÀÏº»"} , {"ÅÂ±¹", "º£Æ®³²", "ÇÊ¸®ÇÉ"} };
+		//2ì°¨ì› ë°°ì—´
+		//ë™ë¶ì•„ì‹œì•„ : í•œêµ­, ì¤‘êµ­, ì¼ë³¸ / ë™ë‚¨ì•„ì‹œì•„ : íƒœêµ­, ë² íŠ¸ë‚¨, í•„ë¦¬í•€ (2*3)
+		String[][] asia = { {"í•œêµ­", "ì¤‘êµ­", "ì¼ë³¸"} , {"íƒœêµ­", "ë² íŠ¸ë‚¨", "í•„ë¦¬í•€"} };
 		
-		System.out.println(Arrays.toString(asia[0]));	//[ÇÑ±¹, Áß±¹, ÀÏº»]
+		System.out.println(Arrays.toString(asia[0]));	//[í•œêµ­, ì¤‘êµ­, ì¼ë³¸]
 		
-		System.out.println(asia[0]);					//[Ljava.lang.String;@5e91993f (1Â÷¿ø ¹è¿­ÀÇ ÁÖ¼Ò °ª)
-		System.out.println(asia[0][1]);					//Áß±¹
+		System.out.println(asia[0]);					//[Ljava.lang.String;@5e91993f (1ì°¨ì› ë°°ì—´ì˜ ì£¼ì†Œ ê°’)
+		System.out.println(asia[0][1]);					//ì¤‘êµ­
 		
 		System.out.println(asia.length);				//2
-		System.out.println(asia[0].length);				//3 (ÇÑ±¹, Áß±¹, ÀÏº»)
+		System.out.println(asia[0].length);				//3 (í•œêµ­, ì¤‘êµ­, ì¼ë³¸)
 		
-		//ÀüÃ¼ Ãâ·Â
-		System.out.println(Arrays.deepToString(asia));	//[[ÇÑ±¹, Áß±¹, ÀÏº»], [ÅÂ±¹, º£Æ®³², ÇÊ¸®ÇÉ]]
+		//ì „ì²´ ì¶œë ¥
+		System.out.println(Arrays.deepToString(asia));	//[[í•œêµ­, ì¤‘êµ­, ì¼ë³¸], [íƒœêµ­, ë² íŠ¸ë‚¨, í•„ë¦¬í•€]]
 		
-		System.out.println("for¹®");
+		System.out.println("forë¬¸");
 		
-		//for¹® (¹è¿­ ÅëÀ¸·Î °¡Á®¿À±â)
+		//forë¬¸ (ë°°ì—´ í†µìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸°)
 		/*
 		 * for(int i=0; i<asia.length; i++) {
-		 *  	System.out.print(Arrays.toString(asia[i])+ ""); //[ÇÑ±¹, Áß±¹, ÀÏº»][ÅÂ±¹, º£Æ®³², ÇÊ¸®ÇÉ] 
+		 *  	System.out.print(Arrays.toString(asia[i])+ ""); //[í•œêµ­, ì¤‘êµ­, ì¼ë³¸][íƒœêµ­, ë² íŠ¸ë‚¨, í•„ë¦¬í•€] 
 		 *  }
 		 */
 
-		//for¹®2 (¹è¿­ ¿ä¼Ò ÇÏ³ª¾¿ °¡Á®¿À±â)
+		//forë¬¸2 (ë°°ì—´ ìš”ì†Œ í•˜ë‚˜ì”© ê°€ì ¸ì˜¤ê¸°)
 		
 		for(int i=0; i<asia.length; i++) {
 			for(int j= 0; j<asia[i].length; j++) {
-				System.out.print(asia[i][j] + " ");		//ÇÑ±¹ Áß±¹ ÀÏº» ÅÂ±¹ º£Æ®³² ÇÊ¸®ÇÉ 
+				System.out.print(asia[i][j] + " ");		//í•œêµ­ ì¤‘êµ­ ì¼ë³¸ íƒœêµ­ ë² íŠ¸ë‚¨ í•„ë¦¬í•€ 
 			}
 		}
 		
@@ -47,17 +47,17 @@ public class Array_1D2D {
 		
 		for(int a=0; a<asia.length; a++) {
 			
-			String[] forarr = asia[a];	//asia[0] = [ÇÑ±¹, Áß±¹, ÀÏº»]
+			String[] forarr = asia[a];	//asia[0] = [í•œêµ­, ì¤‘êµ­, ì¼ë³¸]
 			
 			for(int b=0; b< forarr.length; b++) {
-				System.out.print(forarr[b] + "");	//ÇÑ±¹Áß±¹ÀÏº»ÅÂ±¹º£Æ®³²ÇÊ¸®ÇÉ 
+				System.out.print(forarr[b] + "");	//í•œêµ­ì¤‘êµ­ì¼ë³¸íƒœêµ­ë² íŠ¸ë‚¨í•„ë¦¬í•€ 
 			}
 			
 		}
 		
 		System.out.println("");
 		
-		//charAt() ¸Ş¼­µå »ç¿ë > ÇØ´ç ÀÎµ¦½º¿¡ ÀÖ´Â °ªÀ» ¹İÈ¯ : ´Ü¾î¸¦ char ¹è¿­¿¡ ÇÑ±ÛÀÚ ¾¿ ÀúÀå.
+		//charAt() ë©”ì„œë“œ ì‚¬ìš© > í•´ë‹¹ ì¸ë±ìŠ¤ì— ìˆëŠ” ê°’ì„ ë°˜í™˜ : ë‹¨ì–´ë¥¼ char ë°°ì—´ì— í•œê¸€ì ì”© ì €ì¥.
 		String[] strAr = {"hong", "kim", "park"};
 		
 		System.out.println(strAr[0].charAt(2));	//n
@@ -71,7 +71,7 @@ public class Array_1D2D {
 		}
 		System.out.println();
 		
-		//length vs length() : ÀüÀÚ´Â ¹è¿­ÀÇ ±æÀÌ¸¦, ÈÄÀÚ´Â ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ ±¸ÇÔ.
+		//length vs length() : ì „ìëŠ” ë°°ì—´ì˜ ê¸¸ì´ë¥¼, í›„ìëŠ” ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼ êµ¬í•¨.
 		int[] aaa = new int[10];
 		System.out.println(aaa.length);	//10
 		

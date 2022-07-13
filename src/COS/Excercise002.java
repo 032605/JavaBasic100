@@ -1,9 +1,9 @@
 package COS;
 
-//È¦¼ö, Â¦¼ö ±¸ÇÏ±â ¹®Á¦¸¦ while ¹Ýº¹¹®°ú continue¸¦ »ç¿ëÇÏ¿© ±¸ÇöÇØº¸½Ã¿À.
-//1~30±îÁöÀÇ ¼ö¿¡¼­ Â¦¼ö¸¸ Ãâ·ÂÇÏ½Ã¿À.
-//ÀÌ ¹®Á¦´Â while ¹Ýº¹¹®°ú ±× ¾È¿¡¼­ continue Å°¿öµåÀÇ ¿ªÇÒ°ú »ç¿ë¹ýÀ» ¾Æ´ÂÁö ¹¯´Â ¹®Á¦ÀÌ´Ù.
-//ÀÚ°ÝÁõ ¹®Á¦ ¸»°íµµ ÀÌ·¯ÇÑ continue Å°¿öµå¸¦ »ç¿ëÇÏ´Â ¿ë¹ýÀº Àß ÀÍÇôµÖ¾ß ÇÑ´Ù.
+//í™€ìˆ˜, ì§ìˆ˜ êµ¬í•˜ê¸° ë¬¸ì œë¥¼ while ë°˜ë³µë¬¸ê³¼ continueë¥¼ ì‚¬ìš©í•˜ì—¬ êµ¬í˜„í•´ë³´ì‹œì˜¤.
+//1~30ê¹Œì§€ì˜ ìˆ˜ì—ì„œ ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ì‹œì˜¤.
+//ì´ ë¬¸ì œëŠ” while ë°˜ë³µë¬¸ê³¼ ê·¸ ì•ˆì—ì„œ continue í‚¤ì›Œë“œì˜ ì—­í• ê³¼ ì‚¬ìš©ë²•ì„ ì•„ëŠ”ì§€ ë¬»ëŠ” ë¬¸ì œì´ë‹¤.
+//ìžê²©ì¦ ë¬¸ì œ ë§ê³ ë„ ì´ëŸ¬í•œ continue í‚¤ì›Œë“œë¥¼ ì‚¬ìš©í•˜ëŠ” ìš©ë²•ì€ ìž˜ ìµí˜€ë‘¬ì•¼ í•œë‹¤.
 
 public class Excercise002 {
 	public static void main(String[] args) {

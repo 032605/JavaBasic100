@@ -2,7 +2,7 @@ package pacakge;
 
 import java.util.ArrayList;
 
-// 1ºÎÅÍ 10 »çÀÌÀÇ ¼ıÀÚ°¡ ¹«ÀÛÀ§·Î 10°³ Ãâ·Â
+// 1ë¶€í„° 10 ì‚¬ì´ì˜ ìˆ«ìê°€ ë¬´ì‘ìœ„ë¡œ 10ê°œ ì¶œë ¥
 public class MathRandom {
 	public static void main(String[] args) {
 		

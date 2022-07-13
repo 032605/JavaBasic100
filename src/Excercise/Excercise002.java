@@ -9,26 +9,26 @@ public class Excercise002 {
 		int max, min;
 		
 		for (int i =0; i<arr.length; i++) {
-			arr[i] = (int) (Math.random() * 100);	//Math.random()Àº double Å¸ÀÔÀ¸·Î ¹İÈ¯. cast ÇÊ¼ö
+			arr[i] = (int) (Math.random() * 100);	//Math.random()ì€ double íƒ€ì…ìœ¼ë¡œ ë°˜í™˜. cast í•„ìˆ˜
 		}
 		
-		System.out.println("·£´ı ¿ä¼Ò ¹è¿­ ==> " + Arrays.toString(arr));
+		System.out.println("ëœë¤ ìš”ì†Œ ë°°ì—´ ==> " + Arrays.toString(arr));
 		
 		max = arr[0];
 		min = arr[0];
 		
 		for (int j=0; j<arr.length; j++) {
-			//ÃÖ´ñ°ª
+			//ìµœëŒ“ê°’
 			if(max < arr[j]) {
 				max = arr[j];
 			}
-			//ÃÖ¼Ú°ª
+			//ìµœì†Ÿê°’
 			if(min > arr[j]) {
 				min = arr[j];
 			}
 		}
 		
-		System.out.println("arrÀÇ ÃÖ´ñ°ªÀº : " + max + "  "+ "arrÀÇ ÃÖ¼Ú°ªÀº : " + min);
+		System.out.println("arrì˜ ìµœëŒ“ê°’ì€ : " + max + "  "+ "arrì˜ ìµœì†Ÿê°’ì€ : " + min);
 		
 	}
 }

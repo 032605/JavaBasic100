@@ -8,7 +8,7 @@ public class NoneStaticMethod {
 		
 		public static void main(String[] args) {
 			
-			//¸ŞÀÎ ¸Ş¼­µå´Â static ¸Ş¼­µå¸¸ È£ÃâÇÒ ¼ö ÀÖÀ½ > °´Ã¼ »ı¼º ÈÄ ¸Ş¼­µå È£Ãâ
+			//ë©”ì¸ ë©”ì„œë“œëŠ” static ë©”ì„œë“œë§Œ í˜¸ì¶œí•  ìˆ˜ ìˆìŒ > ê°ì²´ ìƒì„± í›„ ë©”ì„œë“œ í˜¸ì¶œ
 			NoneStaticMethod res = new NoneStaticMethod();
 			
 			res.noneStatic();

@@ -10,19 +10,19 @@ public class Excercise005_Solution {
 	//Method
 	public void solutionMethod(int n, int[] vote_box) {
 		
-		//°³¹ß ÆíÀÇ¸¦ À§ÇÏ¿© ¹è¿­ ÀÎµ¦½º¿Í ÈÄº¸ ¹øÈ£¸¦ ÀÏÄ¡½ÃÄÑÁÖ±â
+		//ê°œë°œ í¸ì˜ë¥¼ ìœ„í•˜ì—¬ ë°°ì—´ ì¸ë±ìŠ¤ì™€ í›„ë³´ ë²ˆí˜¸ë¥¼ ì¼ì¹˜ì‹œì¼œì£¼ê¸°
 		int[] candidate = new int[n+1];
 		
-		System.out.println("==(1) °¢ ÈÄº¸ÀÚ°¡ µæÇ¥ÇÑ µæÇ¥ ¼ö¸¦ Ãâ·ÂÇÏ½Ã¿À.");
+		System.out.println("==(1) ê° í›„ë³´ìê°€ ë“í‘œí•œ ë“í‘œ ìˆ˜ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.");
 		
 		for(int i=0; i<vote_box.length; i++) 
 			candidate[vote_box[i]]++; 
 		
 		for(int j=1; j<candidate.length; j++) {
-			System.out.println(j + "¹ø ÈÄº¸ => " + candidate[j] + "Ç¥");
+			System.out.println(j + "ë²ˆ í›„ë³´ => " + candidate[j] + "í‘œ");
 		}
 		
-		System.out.println("==(2) °¡Àå ¸¹Àº µæÇ¥ ¼ö¿Í ±×¶§ÀÇ ÈÄº¸ÀÚ ¹øÈ£¸¦ Ãâ·ÂÇÏ½Ã¿À.");
+		System.out.println("==(2) ê°€ì¥ ë§ì€ ë“í‘œ ìˆ˜ì™€ ê·¸ë•Œì˜ í›„ë³´ì ë²ˆí˜¸ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.");
 
 		int maxVal = candidate[0];
 		int winner = 0;
@@ -33,25 +33,25 @@ public class Excercise005_Solution {
 				winner = k;
 			}
 		}
-		System.out.println("ÃÖ´Ù µæÇ¥ : " + winner + "¹ø("+  maxVal + "Ç¥)");
+		System.out.println("ìµœë‹¤ ë“í‘œ : " + winner + "ë²ˆ("+  maxVal + "í‘œ)");
 		
-		System.out.println("==(3) °¡Àå ¸¹ÀÌ µæÇ¥ÇÑ ÈÄº¸ÀÚÀÇ µæÇ¥ ¼ö°¡ °ú¹İ¼ö ÀÌ»óÀ» È®º¸ÇÏ¿´´ÂÁö Ã¼Å©ÇÏ¿© ´ç¼± ¶Ç´Â ¹Ì´ç¼±À» Ãâ·ÂÇÏ½Ã¿À.");
+		System.out.println("==(3) ê°€ì¥ ë§ì´ ë“í‘œí•œ í›„ë³´ìì˜ ë“í‘œ ìˆ˜ê°€ ê³¼ë°˜ìˆ˜ ì´ìƒì„ í™•ë³´í•˜ì˜€ëŠ”ì§€ ì²´í¬í•˜ì—¬ ë‹¹ì„  ë˜ëŠ” ë¯¸ë‹¹ì„ ì„ ì¶œë ¥í•˜ì‹œì˜¤.");
 
 		boolean majority = maxVal > vote_box.length/(double)2;
 		
 		if(majority)
-			System.out.println("ÃÖ´Ù µæÇ¥ ¼ö´Â " + maxVal + "Ç¥ ÀÌ¹Ç·Î °ú¹İ¼ö ÀÌ»óÀÔ´Ï´Ù. " + winner + "¹ø ÈÄº¸ÀÚ´Â ´ç¼±ÀÔ´Ï´Ù." );
+			System.out.println("ìµœë‹¤ ë“í‘œ ìˆ˜ëŠ” " + maxVal + "í‘œ ì´ë¯€ë¡œ ê³¼ë°˜ìˆ˜ ì´ìƒì…ë‹ˆë‹¤. " + winner + "ë²ˆ í›„ë³´ìëŠ” ë‹¹ì„ ì…ë‹ˆë‹¤." );
 		else
-			System.out.println("ÃÖ´Ù µæÇ¥ ¼ö´Â " + maxVal + "Ç¥ ÀÌ¹Ç·Î °ú¹İ¼ö ¹Ì¸¸ÀÔ´Ï´Ù. " + winner + "¹ø ÈÄº¸ÀÚ´Â ¹Ì´ç¼±ÀÔ´Ï´Ù." );
+			System.out.println("ìµœë‹¤ ë“í‘œ ìˆ˜ëŠ” " + maxVal + "í‘œ ì´ë¯€ë¡œ ê³¼ë°˜ìˆ˜ ë¯¸ë§Œì…ë‹ˆë‹¤. " + winner + "ë²ˆ í›„ë³´ìëŠ” ë¯¸ë‹¹ì„ ì…ë‹ˆë‹¤." );
 		
 		
-		//¹è¿­¿¡¼­ °¡Àå Å« °ªÀÎ ÃÖ´ñ°ªÀ» ¹İº¹¹® »ç¿ë¾øÀÌ Ã£¾Æº¸½Ã¿À
+		//ë°°ì—´ì—ì„œ ê°€ì¥ í° ê°’ì¸ ìµœëŒ“ê°’ì„ ë°˜ë³µë¬¸ ì‚¬ìš©ì—†ì´ ì°¾ì•„ë³´ì‹œì˜¤
 		System.out.println(Arrays.toString(candidate));
 		Arrays.sort(candidate);
 		System.out.println(Arrays.toString(candidate));
 		
-		System.out.println("°¡Àå ÀûÀº µæÇ¥ ¼ö(ÃÖ¼Ú°ª)´Â = " + candidate[1]);
-		System.out.println("°¡Àå ¸¹Àº µæÇ¥ ¼ö(ÃÖ´ñ°ª)´Â = " + candidate[candidate.length-1]);
+		System.out.println("ê°€ì¥ ì ì€ ë“í‘œ ìˆ˜(ìµœì†Ÿê°’)ëŠ” = " + candidate[1]);
+		System.out.println("ê°€ì¥ ë§ì€ ë“í‘œ ìˆ˜(ìµœëŒ“ê°’)ëŠ” = " + candidate[candidate.length-1]);
 		
 	}
 }

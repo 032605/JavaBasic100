@@ -19,7 +19,7 @@ class Creature {
 
 	// Method
 
-	// getter ¹× setter »ı¼º
+	// getter ë° setter ìƒì„±
 	public String getName() {
 		return name;
 	}
@@ -52,21 +52,21 @@ class Creature {
 		this.weight = weight;
 	}
 
-	//moving ¸Ş¼­µå
+	//moving ë©”ì„œë“œ
 	void moving() {
-		System.out.println(this.name + " ÀÌµ¿ Áß..");
+		System.out.println(this.name + " ì´ë™ ì¤‘..");
 	}
 }
 
 class Monster extends Creature {
 	//Field
 	private String num;
-	private int skill;		//1 : Ã¢, 2 : ¹æÆĞ, 3:ÃÑ
+	private int skill;		//1 : ì°½, 2 : ë°©íŒ¨, 3:ì´
 	private double power;
 
 	//Constructor
 	Monster(String name, int age, int height, int weight, String num, int skill, int power) {
-		//ºÎ¸ğ Å¬·¡½º »ı¼ºÀÚ È£Ãâ
+		//ë¶€ëª¨ í´ë˜ìŠ¤ ìƒì„±ì í˜¸ì¶œ
 		super(name, age, height, weight);
 		
 		this.num = num;
@@ -101,13 +101,13 @@ class Monster extends Creature {
 	
 	void print() {
 		System.out.println("==================");
-		System.out.println("ÀÌ¸§ : " + getName());
-		System.out.println("³ªÀÌ : " + getAge());
-		System.out.println("Å° : " + getHeight());
-		System.out.println("¸ö¹«°Ô : " + getWeight());
-		System.out.println("³Ñ¹ö : " + getNum());
-		System.out.println("½ºÅ³ : " + getSkillName(getSkill()));
-		System.out.println("ÆÄ¿ö : " + getPower());
+		System.out.println("ì´ë¦„ : " + getName());
+		System.out.println("ë‚˜ì´ : " + getAge());
+		System.out.println("í‚¤ : " + getHeight());
+		System.out.println("ëª¸ë¬´ê²Œ : " + getWeight());
+		System.out.println("ë„˜ë²„ : " + getNum());
+		System.out.println("ìŠ¤í‚¬ : " + getSkillName(getSkill()));
+		System.out.println("íŒŒì›Œ : " + getPower());
 		System.out.println("==================");
 	}
 	
@@ -116,13 +116,13 @@ class Monster extends Creature {
 		
 		switch (skill) {
 			case 1 : 
-				skillName = "½ºÇÇµåÇü";
+				skillName = "ìŠ¤í”¼ë“œí˜•";
 				break;
 			case 2 : 
-				skillName = "µğÆæ½ºÇü";
+				skillName = "ë””íœìŠ¤í˜•";
 				break;
 			case 3 :
-				skillName = "µô·¯";
+				skillName = "ë”œëŸ¬";
 				break;
 			default :
 				skillName = "--";
@@ -134,19 +134,19 @@ class Monster extends Creature {
 
 public class Getter_Setter {
 	public static void main(String[] args) {
-		// [1] °´Ã¼ »ı¼º
-		Monster zombie = new Monster("Á»ºñ", 15, 182, 50, "20220602", 1, 10);
+		// [1] ê°ì²´ ìƒì„±
+		Monster zombie = new Monster("ì¢€ë¹„", 15, 182, 50, "20220602", 1, 10);
 
-		// [2] ¸Ş¼­µå È£Ãâ
+		// [2] ë©”ì„œë“œ í˜¸ì¶œ
 		zombie.print();
-		zombie.moving();	//ºÎ¸ğ Å¬·¡½º moving() ¸Ş¼­µå
+		zombie.moving();	//ë¶€ëª¨ í´ë˜ìŠ¤ moving() ë©”ì„œë“œ
 
-		// [1] °´Ã¼ »ı¼º
-		Monster zamanbo = new Monster("Àá¸¸º¸", 15, 250, 25000, "20220603", 2, 10);
+		// [1] ê°ì²´ ìƒì„±
+		Monster zamanbo = new Monster("ì ë§Œë³´", 15, 250, 25000, "20220603", 2, 10);
 
-		// [2] ¸Ş¼­µå È£Ãâ
+		// [2] ë©”ì„œë“œ í˜¸ì¶œ
 		zamanbo.print();
-		zamanbo.moving();	//ºÎ¸ğ Å¬·¡½º moving() ¸Ş¼­µå
+		zamanbo.moving();	//ë¶€ëª¨ í´ë˜ìŠ¤ moving() ë©”ì„œë“œ
 	
 	}
 }

@@ -3,12 +3,12 @@ package collection;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-//¸¹ÀÌ ¹ß»ıÇÏ´Â ¿À·ù java.util.ConcureentMoificationException
-//1) º¸Åë ÄÃ·º¼Ç list ¿ä¼Ò¸¦ ¹İº¹¹® ¾È¿¡¼­ µ¹¸®¸é¼­ °ªÀ» »èÁ¦(remove() ¸Ş¼­µå È£Ãâ)ÇÏ°íÀÚ ÇÒ ¶§ ¹ß»ı
-//		ÇÑ Çà¾¿ »èÁ¦ÇÏ´Â °æ¿ì¿¡´Â º° ¹®Á¦°¡ ¾øÀ¸³ª ¹İº¹¹® ¾È¿¡ ¼øÈ¸ÇÏ¸é¼­ »èÁ¦ ½Ã ÁÖÀÇ!
-//		¹İº¹¹® µé¾î°¡±â ÀüÀÇ ±âÁ¸ list ¹è¿­ÀÇ size(length)³ª index°¡ º¯°æµÇ¸é¼­ ¼øÈ¸ Áß µ¥ÀÌÅÍ°¡ ¸ÂÁö ¾Ê¾Æ ¿À·ù ¹ß»ı.
-//		ÇØ°á] iterator »ç¿ë. ¼øÈ¸ÇÏ°í it.remove() ¸Ş¼­µå·Î Ã³¸®ÇÏ±â.
-//2) iterator °´Ã¼ »ı¼º ¼ø¼­¿¡ µû¶ó¼­µµ ¹ß»ı µî
+//ë§ì´ ë°œìƒí•˜ëŠ” ì˜¤ë¥˜ java.util.ConcureentMoificationException
+//1) ë³´í†µ ì»¬ë ‰ì…˜ list ìš”ì†Œë¥¼ ë°˜ë³µë¬¸ ì•ˆì—ì„œ ëŒë¦¬ë©´ì„œ ê°’ì„ ì‚­ì œ(remove() ë©”ì„œë“œ í˜¸ì¶œ)í•˜ê³ ì í•  ë•Œ ë°œìƒ
+//		í•œ í–‰ì”© ì‚­ì œí•˜ëŠ” ê²½ìš°ì—ëŠ” ë³„ ë¬¸ì œê°€ ì—†ìœ¼ë‚˜ ë°˜ë³µë¬¸ ì•ˆì— ìˆœíšŒí•˜ë©´ì„œ ì‚­ì œ ì‹œ ì£¼ì˜!
+//		ë°˜ë³µë¬¸ ë“¤ì–´ê°€ê¸° ì „ì˜ ê¸°ì¡´ list ë°°ì—´ì˜ size(length)ë‚˜ indexê°€ ë³€ê²½ë˜ë©´ì„œ ìˆœíšŒ ì¤‘ ë°ì´í„°ê°€ ë§ì§€ ì•Šì•„ ì˜¤ë¥˜ ë°œìƒ.
+//		í•´ê²°] iterator ì‚¬ìš©. ìˆœíšŒí•˜ê³  it.remove() ë©”ì„œë“œë¡œ ì²˜ë¦¬í•˜ê¸°.
+//2) iterator ê°ì²´ ìƒì„± ìˆœì„œì— ë”°ë¼ì„œë„ ë°œìƒ ë“±
 // Note: Trying to remove items using a for loop or a for-each loop would not work correctly 
 // 		because the collection is changing size at the same time that the code is trying to loop.
 
@@ -24,24 +24,24 @@ public class Iterator_ArrList002 {
 	
 		Iterator<Integer> it = list.iterator();
 		
-		// »èÁ¦ Àü
+		// ì‚­ì œ ì „
 		for(Integer num:list)
 			System.out.print(num + " ");
 		System.out.println();
 		
-		// ¹İº¹¹®¾øÀÌ ÇÑ Çà¸¸ »èÁ¦ : ¹®Á¦X
+		// ë°˜ë³µë¬¸ì—†ì´ í•œ í–‰ë§Œ ì‚­ì œ : ë¬¸ì œX
 		///System.out.println(list.get(1));	//2
-		//list.remove(1);						//2¹ø »èÁ¦
+		//list.remove(1);						//2ë²ˆ ì‚­ì œ
 		//System.out.println(list.get(1));	//3
 		
-		//while ¹İº¹¹® »ç¿ë (for¹® ¾È¿¡¼­ remove ½Ã ¿À·ù)
+		//while ë°˜ë³µë¬¸ ì‚¬ìš© (forë¬¸ ì•ˆì—ì„œ remove ì‹œ ì˜¤ë¥˜)
 		System.out.println("=====================");
 		
 		while(it.hasNext()) {
 			Integer i = it.next();
 			if(i == 2) {
 				it.remove();
-				System.out.println(i + "¹ø »èÁ¦");
+				System.out.println(i + "ë²ˆ ì‚­ì œ");
 			}
 		}
 		System.out.println("=====================");

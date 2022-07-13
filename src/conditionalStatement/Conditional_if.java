@@ -9,26 +9,26 @@ public class Conditional_if {
 			System.out.println("hi!");
 		
 		if(eng > 90) {
-			System.out.println("A гпа╓ют╢о╢ы.");
-			System.out.println("цЮгогь©Д~");
+			System.out.println("A М∙≥Л═∙Л·┘К▀┬К▀╓.");
+			System.out.println("Л╤∙М∙≤М∙╢Л ■~");
 		} else
-			System.out.println("90а║ ╧л╦╦");
+			System.out.println("90Л═░ К╞╦К╖▄");
 				
 		int tot = kor + eng + math;
 		
 		if (tot>=270) {
-			System.out.println("ця гу╟Х╢б " + tot + "ют╢о╢ы. ╠б");
+			System.out.println("Л╢² М∙╘ЙЁ└К┼■ " + tot + "Л·┘К▀┬К▀╓. Й╣©");
 		} else if (tot>=240) {
-			System.out.println("ця гу╟Х╢б " + tot + "ют╢о╢ы. ╫Н╫Н");
+			System.out.println("Л╢² М∙╘ЙЁ└К┼■ " + tot + "Л·┘К▀┬К▀╓. Л▐≤Л▐≤");
 		} else if (tot>=210) {
-			System.out.println("ця гу╟Х╢б " + tot + "ют╢о╢ы. ╤╪юв");
+			System.out.println("Л╢² М∙╘ЙЁ└К┼■ " + tot + "Л·┘К▀┬К▀╓. К√╪Л·┴");
 		} else {
-			System.out.printf("╢ЯцВ ╠в юлго %d. %n", tot);
+			System.out.printf("К▄⌠Л╦═ Й╥╦ Л²╢М∙≤ %d. %n", tot);
 			
 			if(kor >= 90) {
-				System.out.printf("ця гу╟Х╢б %dюлаЖ╦╦, ╠╧╬Н а║╪Ж╢б %dют╢о╢ы. аЬа╓гя гя╠╧юн", tot, kor);
+				System.out.printf("Л╢² М∙╘ЙЁ└К┼■ %dЛ²╢Л╖─К╖▄, Й╣╜Л√╢ Л═░Л┬≤К┼■ %dЛ·┘К▀┬К▀╓. Л╖└Л═∙М∙° М∙°Й╣╜Л²╦", tot, kor);
 			} else {
-				System.out.printf("╟О╤У╬╡ ця гу╟Х %d, ╠╧╬Н а║╪Ж %d.", tot, kor);
+				System.out.printf("ЙЁ╓К·─Л⌠╟ Л╢² М∙╘ЙЁ└ %d, Й╣╜Л√╢ Л═░Л┬≤ %d.", tot, kor);
 			}
 		}
 		

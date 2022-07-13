@@ -2,8 +2,8 @@ package OOP;
 
 public class Constructor {
 	public static void main(String[] args) {
-		Person pl = new Person(20,"È«±æµ¿");
-		Person pl2 = new Person(40,"¹Ú¸í¼ö");
+		Person pl = new Person(20,"í™ê¸¸ë™");
+		Person pl2 = new Person(40,"ë°•ëª…ìˆ˜");
 		
 		pl.who();
 		pl.move();
@@ -14,15 +14,15 @@ public class Constructor {
 		
 	}
 }
-		//»ý¼ºÀÚ (Constructor) : »ý¼ºÀÚ´Â new Å°¿öµå·Î Å¬·¡½ºÀÇ °´Ã¼(¶Ç´Â ÀÎ½ºÅÏ½º)°¡ »ý¼ºµÉ ¶§ Á¦ÀÏ ¸ÕÀú ÀÚµ¿ÀûÀ¸·Î È£ÃâµÇ´Â Æ¯º°ÇÑ ¸Þ¼­µå.
-		// °´Ã¼ ÃÊ±â °ª ¼³Á¤ÇÏ´Â ¿ëµµ·Î ¸¹ÀÌ »ç¿ëµÊ.
-		// »ý¼ºÀÚ´Â Å¬·¡½º¸í°ú µ¿ÀÏÇÏ°Ô ¸¸µê.
-		// »ý¼ºÀÚ´Â ¸®ÅÏµÇ´Â ¹ÝÈ¯ °ªÀÌ ¾ø´Ù. > °´Ã¼°¡ »ý¼ºµÉ ¶§ Á¦ÀÏ ¸ÕÀú È£Ãâ¸¸ µÈ´Ù.
-		// »ý¼ºÀÚ´Â ¿À¹ö·ÎµùÀÌ °¡´ÉÇÏ´Ù.
-		// »ý¼ºÀÚ´Â default »ý¼ºÀÚ¶ó´Â °ÍÀÌ ÀÖ´Ù > Å¬·¡½º ³» »ý¼ºÀÚ°¡ ¾ø´Ù¸é default »ý¼ºÀÚ°¡ ÀÚµ¿È£Ãâ > Å¬·¡½º¸í°ú µ¿ÀÏÇÏ°í ¹Þ´Â ÀÎÀÚ°ª X
+		//ìƒì„±ìž (Constructor) : ìƒì„±ìžëŠ” new í‚¤ì›Œë“œë¡œ í´ëž˜ìŠ¤ì˜ ê°ì²´(ë˜ëŠ” ì¸ìŠ¤í„´ìŠ¤)ê°€ ìƒì„±ë  ë•Œ ì œì¼ ë¨¼ì € ìžë™ì ìœ¼ë¡œ í˜¸ì¶œë˜ëŠ” íŠ¹ë³„í•œ ë©”ì„œë“œ.
+		// ê°ì²´ ì´ˆê¸° ê°’ ì„¤ì •í•˜ëŠ” ìš©ë„ë¡œ ë§Žì´ ì‚¬ìš©ë¨.
+		// ìƒì„±ìžëŠ” í´ëž˜ìŠ¤ëª…ê³¼ ë™ì¼í•˜ê²Œ ë§Œë“¦.
+		// ìƒì„±ìžëŠ” ë¦¬í„´ë˜ëŠ” ë°˜í™˜ ê°’ì´ ì—†ë‹¤. > ê°ì²´ê°€ ìƒì„±ë  ë•Œ ì œì¼ ë¨¼ì € í˜¸ì¶œë§Œ ëœë‹¤.
+		// ìƒì„±ìžëŠ” ì˜¤ë²„ë¡œë”©ì´ ê°€ëŠ¥í•˜ë‹¤.
+		// ìƒì„±ìžëŠ” default ìƒì„±ìžë¼ëŠ” ê²ƒì´ ìžˆë‹¤ > í´ëž˜ìŠ¤ ë‚´ ìƒì„±ìžê°€ ì—†ë‹¤ë©´ default ìƒì„±ìžê°€ ìžë™í˜¸ì¶œ > í´ëž˜ìŠ¤ëª…ê³¼ ë™ì¼í•˜ê³  ë°›ëŠ” ì¸ìžê°’ X
 		
-		// »ý¼ºÀÚ À§Ä¡ : º¸Åë ¼Ó¼º°ú ¸Þ¼­µå »çÀÌ¿¡ ±â¼ú.
-		// »ý¼ºÀÚµµ ¸Þ¼­µåÀÌ¹Ç·Î ¸Þ¼­µå ±×·ì¿¡ ¼ÓÇÏ´Âµ¥ º¸Åë Á¦ÀÏ »ó´Ü¿¡ À§Ä¡.
+		// ìƒì„±ìž ìœ„ì¹˜ : ë³´í†µ ì†ì„±ê³¼ ë©”ì„œë“œ ì‚¬ì´ì— ê¸°ìˆ .
+		// ìƒì„±ìžë„ ë©”ì„œë“œì´ë¯€ë¡œ ë©”ì„œë“œ ê·¸ë£¹ì— ì†í•˜ëŠ”ë° ë³´í†µ ì œì¼ ìƒë‹¨ì— ìœ„ì¹˜.
 		
 class Person {
 	
@@ -30,7 +30,7 @@ class Person {
 	int age;
 	String name;
 	
-	// Constructor :: ¿À¹ö·ÎµùÀÌ °¡´ÉÇÏ´Ù. (2°³ ÀÌ»ó »ý¼º °¡´É)
+	// Constructor :: ì˜¤ë²„ë¡œë”©ì´ ê°€ëŠ¥í•˜ë‹¤. (2ê°œ ì´ìƒ ìƒì„± ê°€ëŠ¥)
 	Person(){}
 	
 	Person(int age, String name){

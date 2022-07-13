@@ -1,7 +1,7 @@
 package OOP;
 
-//°´Ã¼¿¡ ´ëÇÑ ÂüÁ¶°ªÀ» ¿ä¼Ò·Î °¡Áö´Â °´Ã¼ ¹è¿­ ÄÚµå¸¦ ±¸ÇöÇÏ½Ã¿À.
-//±âº»Çü Å¸ÀÔÀÌ ¾Æ´Ñ ÂüÁ¶Çü Å¸ÀÔÀÇ °´Ã¼°¡ ¿ø¼ÒÀÎ °´Ã¼ ¹è¿­À» ±¸ÇöÇÒ ¼ö ÀÖ´ÂÁö ¹¯´Â ¹®Á¦.
+//ê°ì²´ì— ëŒ€í•œ ì°¸ì¡°ê°’ì„ ìš”ì†Œë¡œ ê°€ì§€ëŠ” ê°ì²´ ë°°ì—´ ì½”ë“œë¥¼ êµ¬í˜„í•˜ì‹œì˜¤.
+//ê¸°ë³¸í˜• íƒ€ì…ì´ ì•„ë‹Œ ì°¸ì¡°í˜• íƒ€ì…ì˜ ê°ì²´ê°€ ì›ì†Œì¸ ê°ì²´ ë°°ì—´ì„ êµ¬í˜„í•  ìˆ˜ ìˆëŠ”ì§€ ë¬»ëŠ” ë¬¸ì œ.
 
 class Candidate {
 	//Field
@@ -27,19 +27,19 @@ class Candidate {
 public class ObjArray {
 	public static void main(String[] args) {
 		
-		// [1] °´Ã¼ »ı¼º
+		// [1] ê°ì²´ ìƒì„±
 		int[] ar1 = {1,2,3,4,5};
 		char[] ar2 = {'A', 'B', 'C', 'D', 'E'};
 		
 		Candidate[] arr = new Candidate[5];
 		
-		arr[0] = new Candidate("±èÄ¡Âî°³", 24); 
-		arr[1] = new Candidate("ÀÌÄ¡Å²", 26); 
-		arr[2] = new Candidate("¸¶¶óÅÁ", 28); 
-		arr[3] = new Candidate("°íÇÜ¹÷", 29); 
-		arr[4] = new Candidate("¾ÈÇÇÀÚ", 20); 
+		arr[0] = new Candidate("ê¹€ì¹˜ì°Œê°œ", 24); 
+		arr[1] = new Candidate("ì´ì¹˜í‚¨", 26); 
+		arr[2] = new Candidate("ë§ˆë¼íƒ•", 28); 
+		arr[3] = new Candidate("ê³ í–„ë²…", 29); 
+		arr[4] = new Candidate("ì•ˆí”¼ì", 20); 
 		
-		// [2] Ãâ·Â
+		// [2] ì¶œë ¥
 		for (int i = 0; i<arr.length; i++) {
 			System.out.print(arr[i].getName() + "(" + arr[i].getAge() + ")" + "\t");	
 		}

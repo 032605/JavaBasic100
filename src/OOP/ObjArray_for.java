@@ -1,7 +1,7 @@
 package OOP;
 
-//¹İº¹ºĞÀ» »ç¿ëÇÏ¿© °´Ã¼ ¹è¿­ »ı¼º ¹× Ãâ·Â
-//°´Ã¼ÀÇ ÁÖ¼Ò¸¦ ÀúÀåÇÏ°í ÀÖ´Â °´Ã¼ ¹è¿­À» ¹İº¹¹®À» »ç¿ëÇÏ¿© ¸¸µé ¼ö ÀÖ´ÂÁö
+//ë°˜ë³µë¶„ì„ ì‚¬ìš©í•˜ì—¬ ê°ì²´ ë°°ì—´ ìƒì„± ë° ì¶œë ¥
+//ê°ì²´ì˜ ì£¼ì†Œë¥¼ ì €ì¥í•˜ê³  ìˆëŠ” ê°ì²´ ë°°ì—´ì„ ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•˜ì—¬ ë§Œë“¤ ìˆ˜ ìˆëŠ”ì§€
 
 class Candidate2 {
 	//Field
@@ -28,22 +28,22 @@ public class ObjArray_for {
 
 	public static void main(String[] args) {
 		
-		// [1] °´Ã¼ »ı¼º
-		Candidate2[] arr;	//Candidate2 Å¸ÀÔÀÇ °´Ã¼ ¹è¿­ º¯¼ö arr ¼±¾ğ.
+		// [1] ê°ì²´ ìƒì„±
+		Candidate2[] arr;	//Candidate2 íƒ€ì…ì˜ ê°ì²´ ë°°ì—´ ë³€ìˆ˜ arr ì„ ì–¸.
 		
 		arr = new Candidate2[5];
 		
-		// [2] ¹İº¹¹®À¸·Î Candidate °´Ã¼ »ı¼º
+		// [2] ë°˜ë³µë¬¸ìœ¼ë¡œ Candidate ê°ì²´ ìƒì„±
 		for (int i=0; i<arr.length; i++) {
-			arr[i] = new Candidate2(i+1 + "¹ø ÈÄº¸ÀÚ", i+20);	//i¸¸ º¸³»¸é Á¤¼öÇüÀÌ¶ó X
+			arr[i] = new Candidate2(i+1 + "ë²ˆ í›„ë³´ì", i+20);	//ië§Œ ë³´ë‚´ë©´ ì •ìˆ˜í˜•ì´ë¼ X
 
-			// [2-1] getter & setter ¸Ş¼­µå »ç¿ë
+			// [2-1] getter & setter ë©”ì„œë“œ ì‚¬ìš©
 			System.out.println(arr[i].getName() + "("+ arr[i].getAge() + ")");
 
-			// [2-2] ¸¸¾à¿¡ private ¾Æ´Ï¸é ¹è¿­ ÀÎµ¦½º »ç¿ëÇÏ¿© Ãâ·Â. arr[i].name 
+			// [2-2] ë§Œì•½ì— private ì•„ë‹ˆë©´ ë°°ì—´ ì¸ë±ìŠ¤ ì‚¬ìš©í•˜ì—¬ ì¶œë ¥. arr[i].name 
 
 			// [2-3] printf() 
-			//System.out.printf("%sÀÇ ³ªÀÌ´Â %d»ìÀÔ´Ï´Ù. \n", arr[i].getName(), arr[i].getAge());
+			//System.out.printf("%sì˜ ë‚˜ì´ëŠ” %dì‚´ì…ë‹ˆë‹¤. \n", arr[i].getName(), arr[i].getAge());
 			
 		}
 		

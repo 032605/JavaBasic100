@@ -3,14 +3,14 @@ package collection;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//2Â÷¿ø ¹è¿­
+//2ì°¨ì› ë°°ì—´
 public class ArrayList003 {
 	public static void main(String[] args) {
 		
-		//[1] : °´Ã¼ »ı¼º
+		//[1] : ê°ì²´ ìƒì„±
 		ArrayList<Integer[]> list = new ArrayList<Integer[]>();
 		
-		//[2] : ¿ä¼Ò Ãß°¡
+		//[2] : ìš”ì†Œ ì¶”ê°€
 		list.add(new Integer[]{11,12,13,14});
 		list.add(new Integer[]{21,22,23,24});
 		list.add(new Integer[]{31,32,33,34});
@@ -20,11 +20,11 @@ public class ArrayList003 {
 		 * System.out.println(Arrays.toString(list.get(i))); }
 		 */
 
-		//[3] : ¿ä¼Ò Ãâ·Â
+		//[3] : ìš”ì†Œ ì¶œë ¥
 		for(int i=0; i<list.size(); i++) {
-			// size 	: ÄÃ·º¼Ç ÇÁ·¹ÀÓ¿öÅ© Å¸ÀÔÀÇ ±æÀÌ
-			// length() : ¹®ÀÚ¿­ÀÇ ±æÀÌ
-			// length 	: ¹è¿­(int[], Integer[], String[])ÀÇ ±æÀÌ¸¦ ¾Ë°í ½ÍÀ» ¶§
+			// size 	: ì»¬ë ‰ì…˜ í”„ë ˆì„ì›Œí¬ íƒ€ì…ì˜ ê¸¸ì´
+			// length() : ë¬¸ìì—´ì˜ ê¸¸ì´
+			// length 	: ë°°ì—´(int[], Integer[], String[])ì˜ ê¸¸ì´ë¥¼ ì•Œê³  ì‹¶ì„ ë•Œ
 			for(int j=0; j<list.get(i).length; j++) {
 				System.out.print(list.get(i)[j] + " ");
 			}

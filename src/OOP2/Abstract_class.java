@@ -1,34 +1,34 @@
 package OOP2;
 
 abstract class Animal {
-	// ±¸Ã¼ÀûÀÎ ³»¿ëÀº ÀÛ¼ºÇÏÁö ¾Ê°í °øÅëÀûÀÎ Æ¯Â¡À» Ãß»óÀûÀ¸·Î ¼±¾ð --> return °ªµµ ¾øÀÌ ¸Þ¼­µå¸í¸¸ ¼±¾ð.
-	// ÀÚ½Ä Å¬·¡½º¸¦ ¿À¹ö¶óÀÌµùÇÏµµ·Ï ÇÏ´Â °­Á¦¼ºÀÌ ÀÖÀ½.
+	// êµ¬ì²´ì ì¸ ë‚´ìš©ì€ ìž‘ì„±í•˜ì§€ ì•Šê³  ê³µí†µì ì¸ íŠ¹ì§•ì„ ì¶”ìƒì ìœ¼ë¡œ ì„ ì–¸ --> return ê°’ë„ ì—†ì´ ë©”ì„œë“œëª…ë§Œ ì„ ì–¸.
+	// ìžì‹ í´ëž˜ìŠ¤ë¥¼ ì˜¤ë²„ë¼ì´ë”©í•˜ë„ë¡ í•˜ëŠ” ê°•ì œì„±ì´ ìžˆìŒ.
 	abstract void crying();
-	void eat() {System.out.println("¸Ô´Ù");}
+	void eat() {System.out.println("ë¨¹ë‹¤");}
 }
 
 abstract class Dog extends Animal {
 }
 
 class Cat extends Animal {
-	void crying() {System.out.println("±×¸ª±×¸ª");}
+	void crying() {System.out.println("ê·¸ë¦‰ê·¸ë¦‰");}
 }
 
 class Animal2 {
-	void fly() {System.out.println("³¯´Ù.");}
+	void fly() {System.out.println("ë‚ ë‹¤.");}
 	
 }
 public class Abstract_class {
 	public static void main(String[] args) {
-		//[1] : Ãß»ó Å¬·¡½º´Â ±¸Ã¼ÀûÀÎ ³»¿ëÀÌ ¾ø±â ¶§¹®¿¡ °´Ã¼¸¦ »ý¼ºÇÒ ¼ö ¾øÀ½.
+		//[1] : ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” êµ¬ì²´ì ì¸ ë‚´ìš©ì´ ì—†ê¸° ë•Œë¬¸ì— ê°ì²´ë¥¼ ìƒì„±í•  ìˆ˜ ì—†ìŒ.
 		//Animal dog = new Animal(); //Err
 		
-		// ÀÏ¹Ý Å¬·¡½º 
+		// ì¼ë°˜ í´ëž˜ìŠ¤ 
 		//Animal2 dragon = new Animal2();
 		//dragon.fly();
 		
-		//[2] : Ãß»ó Å¬·¡½ºÀÇ »ç¿ë : »ó¼Ó ¹Þ¾Æ »ç¿ë
-		// Ãß»ó(ºÎ¸ð) Å¬·¡½º¸¦ »ó¼Ó¹ÞÀº ÀÚ½Ä Å¬·¡½º¿¡¼­ ÇØ´ç ¸Þ¼­µå¸¦ ¿À¹ö¶óÀÌµùÇÏ¿© ÀçÁ¤ÀÇÇÑ ÈÄ »ç¿ë.
+		//[2] : ì¶”ìƒ í´ëž˜ìŠ¤ì˜ ì‚¬ìš© : ìƒì† ë°›ì•„ ì‚¬ìš©
+		// ì¶”ìƒ(ë¶€ëª¨) í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ ìžì‹ í´ëž˜ìŠ¤ì—ì„œ í•´ë‹¹ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©í•˜ì—¬ ìž¬ì •ì˜í•œ í›„ ì‚¬ìš©.
 		Cat cat = new Cat();
 		cat.crying();
 		cat.eat();
@@ -37,17 +37,17 @@ public class Abstract_class {
 		//dog.crying();
 		
 		//[3] : Summary
-		// Ãß»ó Å¬·¡½º´Â ´Ù¸¥ Å¬·¡½ºµéÀÇ °øÅëÀûÀÎ Æ¯Â¡À» º¯¼ö³ª ¸Þ¼­µå·Î Á¤ÀÇ¸¸ ÇØ³õ´Â °Í --> Ãß»ó¸Þ¼­µå
-		// abstract¸¦ ¾Õ¿¡ ºÙÀÌ°í Å¬·¡½º ¾È¿¡ Ãß»ó ¸Þ¼­µå¸¦ Æ÷ÇÔÇÏ°í ÀÖ´Ù´Â °ÍÀ» Á¦¿ÜÇÏ¸é ÀÏ¹Ý Å¬·¡½º¿Í º°¹Ý Â÷ÀÌ X
-		// Field, Constructor, Method(Ãß»ó ¸Þ¼­µå ¿Ü ÀÏ¹Ý Å¬·¡½º)µµ Æ÷ÇÔÇÒ ¼ö ÀÖ´Ù.
-		// ¸Þ¼­µå ¼±¾ð¸¸ ÀÖ°í ±¸Ã¼ÀûÀÎ ³»¿ëÀº ¾øÀ¸¹Ç·Î °´Ã¼ »ý¼º ºÒ°¡´É
-		// µû¶ó¼­, ºÎ¸ð Å¬·¡½º·Î¼­ÀÇ ¿ªÇÒÀº ÇÏÁö¸¸, ±¸Ã¼ÀûÀÎ »ç¿ëÀº ÀÚ½Ä Å¬·¡½º¿¡¼­ ÀçÁ¤ÀÇ(¿À¹ö¶óÀÌµù)ÇÏ¿© »ç¿ë -> °­Á¦¼º
-		// Ãß»ó Å¬·¡½º¿¡¼­ ¼±¾ð¸¸ ÇØ³ðÀ¸·Î½á ÀÌÈÄ »õ·Î¿î(ÀÚ½Ä) Å¬·¡½ºµéÀÌ ÀÌ¸¦ »ó¼Ó¹Þ¾Æ ±¸ÇöÇÏ¹Ç·Î »õ·Î¿î Å¬·¡½º¸¦ ÀÛ¼ºÇÒ ¶§ ÇÏ³ªÀÇ Æ²ÀÌ µÊ.
-		// Ãß»ó ¸Þ¼­µå¸¦ Æ÷ÇÔÇÏ°í ÀÖ´Ù¸é °ð Ãß»ó Å¬·¡½º¿©¾ß ÇÔ.
+		// ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” ë‹¤ë¥¸ í´ëž˜ìŠ¤ë“¤ì˜ ê³µí†µì ì¸ íŠ¹ì§•ì„ ë³€ìˆ˜ë‚˜ ë©”ì„œë“œë¡œ ì •ì˜ë§Œ í•´ë†“ëŠ” ê²ƒ --> ì¶”ìƒë©”ì„œë“œ
+		// abstractë¥¼ ì•žì— ë¶™ì´ê³  í´ëž˜ìŠ¤ ì•ˆì— ì¶”ìƒ ë©”ì„œë“œë¥¼ í¬í•¨í•˜ê³  ìžˆë‹¤ëŠ” ê²ƒì„ ì œì™¸í•˜ë©´ ì¼ë°˜ í´ëž˜ìŠ¤ì™€ ë³„ë°˜ ì°¨ì´ X
+		// Field, Constructor, Method(ì¶”ìƒ ë©”ì„œë“œ ì™¸ ì¼ë°˜ í´ëž˜ìŠ¤)ë„ í¬í•¨í•  ìˆ˜ ìžˆë‹¤.
+		// ë©”ì„œë“œ ì„ ì–¸ë§Œ ìžˆê³  êµ¬ì²´ì ì¸ ë‚´ìš©ì€ ì—†ìœ¼ë¯€ë¡œ ê°ì²´ ìƒì„± ë¶ˆê°€ëŠ¥
+		// ë”°ë¼ì„œ, ë¶€ëª¨ í´ëž˜ìŠ¤ë¡œì„œì˜ ì—­í• ì€ í•˜ì§€ë§Œ, êµ¬ì²´ì ì¸ ì‚¬ìš©ì€ ìžì‹ í´ëž˜ìŠ¤ì—ì„œ ìž¬ì •ì˜(ì˜¤ë²„ë¼ì´ë”©)í•˜ì—¬ ì‚¬ìš© -> ê°•ì œì„±
+		// ì¶”ìƒ í´ëž˜ìŠ¤ì—ì„œ ì„ ì–¸ë§Œ í•´ë†ˆìœ¼ë¡œì¨ ì´í›„ ìƒˆë¡œìš´(ìžì‹) í´ëž˜ìŠ¤ë“¤ì´ ì´ë¥¼ ìƒì†ë°›ì•„ êµ¬í˜„í•˜ë¯€ë¡œ ìƒˆë¡œìš´ í´ëž˜ìŠ¤ë¥¼ ìž‘ì„±í•  ë•Œ í•˜ë‚˜ì˜ í‹€ì´ ë¨.
+		// ì¶”ìƒ ë©”ì„œë“œë¥¼ í¬í•¨í•˜ê³  ìžˆë‹¤ë©´ ê³§ ì¶”ìƒ í´ëž˜ìŠ¤ì—¬ì•¼ í•¨.
 		
-		// ¾²´Â ÀÌÀ¯ : ÀçÁ¤ÀÇ¿¡ ´ëÇÑ °­Á¦¼º
-		// ÀçÁ¤ÀÇÇÏ°í ½ÍÁö ¾Ê´Ù¸é?
-		// ÀÚ½Ä Å¬·¡½º¿¡¼­ »ó¼Ó¹ÞÀº Ãß»ó ¸Þ¼­µå¸¦ ±¸ÇöÇÏÁö ¾Ê´Ù¸é ÀÚ½Ä Å¬·¡½ºµµ abstract¸¦ ºÙ¿© Ãß»óÀ¸·Î ¸¸µé¾îÁÖ¸é µÊ.
+		// ì“°ëŠ” ì´ìœ  : ìž¬ì •ì˜ì— ëŒ€í•œ ê°•ì œì„±
+		// ìž¬ì •ì˜í•˜ê³  ì‹¶ì§€ ì•Šë‹¤ë©´?
+		// ìžì‹ í´ëž˜ìŠ¤ì—ì„œ ìƒì†ë°›ì€ ì¶”ìƒ ë©”ì„œë“œë¥¼ êµ¬í˜„í•˜ì§€ ì•Šë‹¤ë©´ ìžì‹ í´ëž˜ìŠ¤ë„ abstractë¥¼ ë¶™ì—¬ ì¶”ìƒìœ¼ë¡œ ë§Œë“¤ì–´ì£¼ë©´ ë¨.
 		
 	}
 }

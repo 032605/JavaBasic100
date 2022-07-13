@@ -8,16 +8,16 @@ public class Excercise003 {
 	public static void main(String[] args) {
 		int[] arr = {88, 50, 38, 100, 90, 100, 99, 65};
 
-		System.out.print("Á¤·Ä Àü ");
+		System.out.print("ì •ë ¬ ì „ ");
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println();
 		
-		//³»ÀåµÈ Á¤·Ä ¸Ş¼­µå¸¦ »ç¿ëÇØ¼­ ¿À¸§Â÷¼ø
+		//ë‚´ì¥ëœ ì •ë ¬ ë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ì„œ ì˜¤ë¦„ì°¨ìˆœ
 		Arrays.sort(arr);
 		
-		System.out.print("Á¤·Ä ÈÄ ");
+		System.out.print("ì •ë ¬ í›„ ");
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
@@ -29,16 +29,16 @@ public class Excercise003 {
 		
 		System.out.println();
 		System.out.println("=========================");
-		//³»ÀåµÈ Á¤·Ä ¸Ş¼­µå¸¦ »ç¿ëÇØ¼­ ³»¸²Â÷¼ø
-		//³»¸²Â÷¼øÀÌ°Å³ª ¿øÇÏ´Â´ë·Î Á¤·ÄÀÇ Á¶°ÇÀ» ¼³Á¤ÇÒ ¶§´Â ±âº»Çü(Primitive Type) ¹è¿­¿¡´Â Àû¿ëÀÌ ¾ÈµÊ. > ·¡ÆÛ Å¬·¡½º > ¹è¿­¸í, Collections.reverseOrder()
-		//*Âü°í) StringÀº ±âº»Çü Å¸ÀÔÀÌ ¾Æ´Ô^)^
+		//ë‚´ì¥ëœ ì •ë ¬ ë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ì„œ ë‚´ë¦¼ì°¨ìˆœ
+		//ë‚´ë¦¼ì°¨ìˆœì´ê±°ë‚˜ ì›í•˜ëŠ”ëŒ€ë¡œ ì •ë ¬ì˜ ì¡°ê±´ì„ ì„¤ì •í•  ë•ŒëŠ” ê¸°ë³¸í˜•(Primitive Type) ë°°ì—´ì—ëŠ” ì ìš©ì´ ì•ˆë¨. > ë˜í¼ í´ë˜ìŠ¤ > ë°°ì—´ëª…, Collections.reverseOrder()
+		//*ì°¸ê³ ) Stringì€ ê¸°ë³¸í˜• íƒ€ì…ì´ ì•„ë‹˜^)^
 		Integer[] arr2 = {88, 50, 38, 100, 90, 100, 99, 65};
 		
-		System.out.println("Á¤·Ä Àü " + Arrays.toString(arr2));
+		System.out.println("ì •ë ¬ ì „ " + Arrays.toString(arr2));
 		
-		Arrays.sort(arr2,Collections.reverseOrder());	//PythonÀÌ¶û ºñ½Á
+		Arrays.sort(arr2,Collections.reverseOrder());	//Pythonì´ë‘ ë¹„ìŠ·
 		
-		System.out.println("Á¤·Ä ÈÄ " + Arrays.toString(arr2));
+		System.out.println("ì •ë ¬ í›„ " + Arrays.toString(arr2));
 		
 		
 	}

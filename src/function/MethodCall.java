@@ -19,10 +19,10 @@ public class MethodCall {
 		testMethod a =  new testMethod(1);
 		testMethod b =  new testMethod(2);
 		
-		System.out.println("a´Â " + a.num);
+		System.out.println("aëŠ” " + a.num);
 		
 		sum(a,b);
 		
-		System.out.println("a´Â " + a.num + ", b´Â " + b.num);
+		System.out.println("aëŠ” " + a.num + ", bëŠ” " + b.num);
 	}
 }

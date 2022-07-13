@@ -7,25 +7,25 @@ public class ArrayList002 {
 		
 		ArrayList<String> food = new ArrayList<String>();
 		
-		food.add("¸¶Á¦¼Ò¹Ù");
-		food.add("Ä«ÀÌ¸·");
-		food.add("ÀáºÀºÆ¸£");
-		food.add("½º³ë¿ìÇÇ");
-		food.add("ÅÙµ¿");
-		food.add("»õ¸¶À»½Ä´ç");
-		food.add("½ºÄðÇªµå");
-		food.add("Çì±â");
-		food.add("°ñµå¹Ù");
+		food.add("ë§ˆì œì†Œë°”");
+		food.add("ì¹´ì´ë§‰");
+		food.add("ìž ë´‰ëµˆë¥´");
+		food.add("ìŠ¤ë…¸ìš°í”¼");
+		food.add("í…ë™");
+		food.add("ìƒˆë§ˆì„ì‹ë‹¹");
+		food.add("ìŠ¤ì¿¨í‘¸ë“œ");
+		food.add("í—¤ê¸°");
+		food.add("ê³¨ë“œë°”");
 		
-		String str = food.get(0);	//Çüº¯È¯ ¾øÀÌ ¹Ù·Î »ç¿ë -> Å¸ÀÔ ¾ÈÀü¼º ¡ã
+		String str = food.get(0);	//í˜•ë³€í™˜ ì—†ì´ ë°”ë¡œ ì‚¬ìš© -> íƒ€ìž… ì•ˆì „ì„± â–²
 		
 		for(int i=0; i<food.size(); i++) {
-			System.out.printf("%d¹ø ÈÄº¸ÀÇ ÀÌ¸§Àº %sÀÔ´Ï´Ù.", (i+1), food.get(i));
+			System.out.printf("%dë²ˆ í›„ë³´ì˜ ì´ë¦„ì€ %sìž…ë‹ˆë‹¤.", (i+1), food.get(i));
 			System.out.println();
 		}
 		
-		food.set(0, "Ä­´Ù¼Ò¹Ù");	//¼öÁ¤
-		food.remove(4);			//»èÁ¦
+		food.set(0, "ì¹¸ë‹¤ì†Œë°”");	//ìˆ˜ì •
+		food.remove(4);			//ì‚­ì œ
 		
 		System.out.println("================");
 		
@@ -33,7 +33,7 @@ public class ArrayList002 {
 			System.out.print(list + " ");
 		System.out.println();
 		
-		food.removeAll(food);	//¸ðµÎ »èÁ¦
+		food.removeAll(food);	//ëª¨ë‘ ì‚­ì œ
 		System.out.println(food.size());	//0
 		
 	}

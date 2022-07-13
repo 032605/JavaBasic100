@@ -10,7 +10,7 @@ public class Excercise004_02 {
 		//int rank_len = sco_len;
 		
 		for(int i=0; i<sco_len; i++) {
-			System.out.print(scores[i] + "Á¡ => " + rank[i] + "µî ");
+			System.out.print(scores[i] + "ì  => " + rank[i] + "ë“± ");
 		}
 	};
 	
@@ -19,23 +19,23 @@ public class Excercise004_02 {
 		int[] scores = {88, 50, 38, 100, 90, 100, 99, 65};
 		int[] rank = new int[scores.length];
 
-		System.out.println("===ÃÑ 8¸í ÇĞ»ıÀÇ ¼ºÀû°ú µî¼ö´Â?");
+		System.out.println("===ì´ 8ëª… í•™ìƒì˜ ì„±ì ê³¼ ë“±ìˆ˜ëŠ”?");
 
-		//¿À¸§Â÷¼ø Á¤·Ä
+		//ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 		Arrays.sort(scores);
 		
 		for(int i=0; i<scores.length; i++) {
 			
-			rank[i] = 1;	//8µîÀ¸·Î ÃÊ±âÈ­ÇÏ´Â °Íº¸´Ù 1µîÀ¸·Î ÃÊ±âÈ­ÇÏ´Â °ÍÀÌ ´õ È¿À²ÀûÀÓ.
+			rank[i] = 1;	//8ë“±ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ëŠ” ê²ƒë³´ë‹¤ 1ë“±ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ëŠ” ê²ƒì´ ë” íš¨ìœ¨ì ì„.
 			
 			for(int j=0; j<scores.length; j++) {
 				if(scores[i] < scores[j] )
 					rank[i]++;   	
 			}
-			//System.out.print(scores[i] + "Á¡ => " + rank[i] + "µî ");
+			//System.out.print(scores[i] + "ì  => " + rank[i] + "ë“± ");
 		}
 
-		// Ãâ·Â ¸Ş¼­µå »ç¿ë
+		// ì¶œë ¥ ë©”ì„œë“œ ì‚¬ìš©
 		printRanking(scores, rank);
 		
 	}

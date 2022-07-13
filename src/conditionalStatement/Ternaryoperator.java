@@ -9,12 +9,12 @@ public class Ternaryoperator {
 		Scanner scan = new Scanner(System.in);
 		hour = scan.nextInt();
 		
-		//»ïÇ×¿¬»êÀÚ 10ÀÌÇÏ¸é 100 °ö¼À
+		//ì‚¼í•­ì—°ì‚°ì 10ì´í•˜ë©´ 100 ê³±ì…ˆ
 		int test = hour<=10?hour*100:hour; 
 		System.out.println("[2] " + test );
 		
-		//»ïÇ×¿¬»êÀÚ¸¦ ÀÌ¿ëÇÏ¿© 12½Ã ÀÌÀüÀÌ¸é ¿ÀÀü, ÀÌÈÄ¸é ¿ÀÈÄ¸¦ Ãâ·Â
-		String ampm = hour<12?"¿ÀÀü":"¿ÀÈÄ";
+		//ì‚¼í•­ì—°ì‚°ìë¥¼ ì´ìš©í•˜ì—¬ 12ì‹œ ì´ì „ì´ë©´ ì˜¤ì „, ì´í›„ë©´ ì˜¤í›„ë¥¼ ì¶œë ¥
+		String ampm = hour<12?"ì˜¤ì „":"ì˜¤í›„";
 		System.out.println("[3] " + ampm);
 	}
 }

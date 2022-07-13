@@ -3,7 +3,7 @@ package function;
 public class CallByValue {
 
 	//Call By Value
-	//¸Ş¼­µå·Î ÀÎÀÚ °ªÀ» ³Ñ±æ ¶§ ÇØ´ç °ªÀ» º¹»çÇÏ¿© ³Ñ±â´Â ¹æ½Ä
+	//ë©”ì„œë“œë¡œ ì¸ì ê°’ì„ ë„˜ê¸¸ ë•Œ í•´ë‹¹ ê°’ì„ ë³µì‚¬í•˜ì—¬ ë„˜ê¸°ëŠ” ë°©ì‹
 	public static void sum(int a) {
 		a += 400;
 		

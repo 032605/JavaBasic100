@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Method_Return {
 	
-	//2°³ÀÇ Á¤¼öÇü °ªÀ» ¸®ÅÏÇÏ´Â ¸Ş¼­µå ±¸Çö 
+	//2ê°œì˜ ì •ìˆ˜í˜• ê°’ì„ ë¦¬í„´í•˜ëŠ” ë©”ì„œë“œ êµ¬í˜„ 
 	
 
 	public static HashMap hashMapMethod() {
@@ -15,7 +15,7 @@ public class Method_Return {
 		map.put("num1", 100);
 		map.put("num2", 200);
 		
-		//PythonÀº return num1, num2 °¡´É
+		//Pythonì€ return num1, num2 ê°€ëŠ¥
 		return map;
 	}
 	
@@ -36,7 +36,7 @@ public class Method_Return {
 	
 	public static void main(String[]args) {
 
-		//hashmapÀ¸·Î return
+		//hashmapìœ¼ë¡œ return
 		HashMap rst = hashMapMethod();
 		
 		System.out.println(rst);				//{num1=100, num2=200}
@@ -44,7 +44,7 @@ public class Method_Return {
 		
 		System.out.println("===========int===========");
 		
-		//¹è¿­ º¯¼ö ¼±¾ğ
+		//ë°°ì—´ ë³€ìˆ˜ ì„ ì–¸
 		int intRst[] = intMethod();
 		
 		for (int i=0; i<intRst.length; i++) {
@@ -57,10 +57,10 @@ public class Method_Return {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("´ë¹®ÀÚ·Î ¹Ù²Ü ¹®ÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+		System.out.print("ëŒ€ë¬¸ìë¡œ ë°”ê¿€ ë¬¸ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 		String toUpper = sc.next();
 		
-		System.out.print("¼Ò¹®ÀÚ·Î ¹Ù²Ü ¹®ÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+		System.out.print("ì†Œë¬¸ìë¡œ ë°”ê¿€ ë¬¸ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 		String toLower = sc.next();
 		
 		String strRst[] = StringMethod(toUpper, toLower);

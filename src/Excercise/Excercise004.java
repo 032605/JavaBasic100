@@ -1,14 +1,14 @@
 package Excercise;
 
-//ÇĞ»ıµéÀÇ ¼ºÀûÀ» 1µî ºÎÅÍ ¼øÀ§¸¦ ¸Å°Ü¼­ Ãâ·ÂÇØº¸½Ã¿À.
-//ÀÌ ¹®Á¦´Â ¼øÀ§(Ranking) ¾Ë°í¸®Áò¿¡ ´ëÇØ¼­ ¾Ë°í ÀÖ´ÂÁö¸¦ ¹¯´Â ¹®Á¦ÀÌ´Ù
+//í•™ìƒë“¤ì˜ ì„±ì ì„ 1ë“± ë¶€í„° ìˆœìœ„ë¥¼ ë§¤ê²¨ì„œ ì¶œë ¥í•´ë³´ì‹œì˜¤.
+//ì´ ë¬¸ì œëŠ” ìˆœìœ„(Ranking) ì•Œê³ ë¦¬ì¦˜ì— ëŒ€í•´ì„œ ì•Œê³  ìˆëŠ”ì§€ë¥¼ ë¬»ëŠ” ë¬¸ì œì´ë‹¤
 
 public class Excercise004 {
 	public static void main(String[] args) {
 		
 		int[] arr = {88, 50, 38, 100, 90, 100, 99, 65};
 		
-		System.out.println("ÃÑ 8¸í ÇĞ»ıÀÇ ¼ºÀû°ú µî¼ö´Â?");
+		System.out.println("ì´ 8ëª… í•™ìƒì˜ ì„±ì ê³¼ ë“±ìˆ˜ëŠ”?");
 		
 		for (int k=0; k<arr.length; k++) {
 			
@@ -19,7 +19,7 @@ public class Excercise004 {
 					rank = rank - 1;
 				}
 			}
-			System.out.print(arr[k] + "Á¡ -> " + rank + "µî ");
+			System.out.print(arr[k] + "ì  -> " + rank + "ë“± ");
 		}
 
 	}

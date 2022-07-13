@@ -1,6 +1,6 @@
 package collection;
 
-// ÄÄÆÄÀÏ ´Ü°è¿¡¼­´Â ¿¡·¯°¡ ¾È³ª°í ½ÇÇà ´Ü°è¿¡¼­ ClassCast ¿À·ù ¹ß»ı > Á¦³×¸¯ÀÇ ÇÊ¿ä¼º
+// ì»´íŒŒì¼ ë‹¨ê³„ì—ì„œëŠ” ì—ëŸ¬ê°€ ì•ˆë‚˜ê³  ì‹¤í–‰ ë‹¨ê³„ì—ì„œ ClassCast ì˜¤ë¥˜ ë°œìƒ > ì œë„¤ë¦­ì˜ í•„ìš”ì„±
 
 class Person {
 	public Object obj;
@@ -20,13 +20,13 @@ class Teacher {}
 public class Generic002 {
 	public static void main(String[] args) {
 		
-		//[1] °´Ã¼ »ı¼º
-		Person p1 = new Person("È«±æµ¿");
+		//[1] ê°ì²´ ìƒì„±
+		Person p1 = new Person("í™ê¸¸ë™");
 		System.out.println(p1.obj);
 		
 		Person p2 = new Person(new Student(2));
-		Student s1 = (Student) p2.obj;			//¡ÚCAST
-		//Teacher t1 = (Teacher) p2.obj;		//ÇüÅ¸ÀÔ ¿À·ù (String Å¸ÀÔÀ» int Å¸ÀÔÀ¸·Î Çüº¯È¯ÇÏ´Â °İ)			
+		Student s1 = (Student) p2.obj;			//â˜…CAST
+		//Teacher t1 = (Teacher) p2.obj;		//í˜•íƒ€ì… ì˜¤ë¥˜ (String íƒ€ì…ì„ int íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜í•˜ëŠ” ê²©)			
 		System.out.println(s1);
 
 		Person p3 = new Person("hey");

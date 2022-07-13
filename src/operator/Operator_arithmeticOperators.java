@@ -9,9 +9,9 @@ public class Operator_arithmeticOperators {
 		a=60; b=8; c=300; d=400;
 		rst = a/b;
 		rst2 = a/b;
-		rst3 = a/(double)b;		//´õ Å« typeÀ¸·Î °è»êÇÏ¹Ç·Î double typeÀ¸·Î ¿¬»êµÊ
-		rst4 = 100/3;			//Á¤¼ö·Î °è»ê
-		rst5 = 100.0/3.0;		// --> (double)100/3°ú µ¿ÀÏ
+		rst3 = a/(double)b;		//ë” í° typeìœ¼ë¡œ ê³„ì‚°í•˜ë¯€ë¡œ double typeìœ¼ë¡œ ì—°ì‚°ë¨
+		rst4 = 100/3;			//ì •ìˆ˜ë¡œ ê³„ì‚°
+		rst5 = 100.0/3.0;		// --> (double)100/3ê³¼ ë™ì¼
 		avg = 250/3.0;
 		
 		System.out.println(a + b);						//68
@@ -22,15 +22,15 @@ public class Operator_arithmeticOperators {
 		
 		System.out.println("a / b = " + (a / b)  );		//7
 		System.out.println("a / b = " + (double) rst);	//7.0
-		System.out.println("a / b = " + rst2);			//7.0 (À§¶û ¶È°°À½. ¸®ÅÏ¹Ş´Â º¯¼ö¸¦ ½Ç¼öÇüÀ¸·Î ÇÏ´õ¶óµµ int·Î ¿¬»ê)
+		System.out.println("a / b = " + rst2);			//7.0 (ìœ„ë‘ ë˜‘ê°™ìŒ. ë¦¬í„´ë°›ëŠ” ë³€ìˆ˜ë¥¼ ì‹¤ìˆ˜í˜•ìœ¼ë¡œ í•˜ë”ë¼ë„ intë¡œ ì—°ì‚°)
 		System.out.println("a / b = " + rst3);			//7.5 
 		System.out.println("a / b = " + rst4);			//33.0
 		System.out.println("a / b = " + rst5);			//33.333333333333336
-		System.out.printf("¼¼ °ú¸ñÀÇ Æò±ÕÀº %.2fÀÔ´Ï´Ù. %n", avg);
+		System.out.printf("ì„¸ ê³¼ëª©ì˜ í‰ê· ì€ %.2fì…ë‹ˆë‹¤. %n", avg);
 		
 		System.out.println("a % b = " + (a % b)  );		//4
 
-		// Ãà¾àµÈ ÇüÅÂ 
+		// ì¶•ì•½ëœ í˜•íƒœ 
 		int e=0, f=100;
 		
 		e= e + 1;

@@ -2,23 +2,23 @@ package function;
 
 public class Method {
 	
-	// ¸Ş¼­µå : ´Ù¸¥ ¾ğ¾î¿¡¼­ÀÇ ÇÔ¼ö¿Í ¸¶Âù°¡Áö·Î ¾î¶² Æ¯Á¤ÇÑ µ¿ÀÛÀÌ³ª Ã³¸®¸¦ ÇÏµµ·Ï ¸¸µé¾îÁø ÄÚµå ´ÜÀ§. > Àç»ç¿ë¼º
-	// °á°ú ¹İÈ¯ÇÒ ¼öµµ/¾ÈÇÒ ¼öµµ, ÀÎÀÚ °ª ³Ñ±æ ¼öµµ/¾È ³Ñ±æ ¼öµµ
+	// ë©”ì„œë“œ : ë‹¤ë¥¸ ì–¸ì–´ì—ì„œì˜ í•¨ìˆ˜ì™€ ë§ˆì°¬ê°€ì§€ë¡œ ì–´ë–¤ íŠ¹ì •í•œ ë™ì‘ì´ë‚˜ ì²˜ë¦¬ë¥¼ í•˜ë„ë¡ ë§Œë“¤ì–´ì§„ ì½”ë“œ ë‹¨ìœ„. > ì¬ì‚¬ìš©ì„±
+	// ê²°ê³¼ ë°˜í™˜í•  ìˆ˜ë„/ì•ˆí•  ìˆ˜ë„, ì¸ì ê°’ ë„˜ê¸¸ ìˆ˜ë„/ì•ˆ ë„˜ê¸¸ ìˆ˜ë„
 	
-	//1) ¹İÈ¯°ª X		¹Ş´Â ÀÎÀÚ°ª X
-	//2) ¹İÈ¯°ª X		¹Ş´Â ÀÎÀÚ°ª O
-	//3) ¹İÈ¯°ª O		¹Ş´Â ÀÎÀÚ°ª X
-	//4) ¹İÈ¯°ª O		¹Ş´Â ÀÎÀÚ°ª O
+	//1) ë°˜í™˜ê°’ X		ë°›ëŠ” ì¸ìê°’ X
+	//2) ë°˜í™˜ê°’ X		ë°›ëŠ” ì¸ìê°’ O
+	//3) ë°˜í™˜ê°’ O		ë°›ëŠ” ì¸ìê°’ X
+	//4) ë°˜í™˜ê°’ O		ë°›ëŠ” ì¸ìê°’ O
 	
 	
-	// ============ 1) ¹İÈ¯°ª X		¹Ş´Â ÀÎÀÚ°ª X
+	// ============ 1) ë°˜í™˜ê°’ X		ë°›ëŠ” ì¸ìê°’ X
 	
-	//static > Å¬·¡½º¸í.¸Ş¼­µå¸í(); È£Ãâ
+	//static > í´ë˜ìŠ¤ëª….ë©”ì„œë“œëª…(); í˜¸ì¶œ
 	public static void showMenu() {
-		System.out.println("showMenu() ¸Ş¼­µå È£Ãâ");
+		System.out.println("showMenu() ë©”ì„œë“œ í˜¸ì¶œ");
 	}
 	
-	// ============ 2) ¹İÈ¯°ª X		¹Ş´Â ÀÎÀÚ°ª O
+	// ============ 2) ë°˜í™˜ê°’ X		ë°›ëŠ” ì¸ìê°’ O
 	
 	public static void plus(int a, int b) {
 		
@@ -26,7 +26,7 @@ public class Method {
 	
 	}
 	
-	// ============ 3) ¹İÈ¯°ª O		¹Ş´Â ÀÎÀÚ°ª X
+	// ============ 3) ë°˜í™˜ê°’ O		ë°›ëŠ” ì¸ìê°’ X
 	
 	public static String third() {
 		
@@ -34,7 +34,7 @@ public class Method {
 	
 	}
 	
-	// ============ 4) ¹İÈ¯°ª O		¹Ş´Â ÀÎÀÚ°ª O
+	// ============ 4) ë°˜í™˜ê°’ O		ë°›ëŠ” ì¸ìê°’ O
 	
 	public static String convertCapital(String str) {
 		
@@ -45,7 +45,7 @@ public class Method {
 	
 	public static void main(String[] args) {
 	
-		// main method¿¡ static ¼±¾ğ > static method¸¸ È£Ãâ °¡´É.
+		// main methodì— static ì„ ì–¸ > static methodë§Œ í˜¸ì¶œ ê°€ëŠ¥.
 		
 		//[1]
 		showMenu();
@@ -63,12 +63,12 @@ public class Method {
 		//[4]
 		//Scanner sc = new Scanner(System.in);
 		
-		//System.out.print("¼Ò¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ===>");
+		//System.out.print("ì†Œë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. ===>");
 		//String str = sc.next();
 		
 		//String rs = convertCapital(str);
 		String rs = convertCapital("korea");
-		System.out.println("ÀÔ·ÂÇÑ ¼Ò¹®ÀÚÀÇ ´ë¹®ÀÚ´Â = " + rs);
+		System.out.println("ì…ë ¥í•œ ì†Œë¬¸ìì˜ ëŒ€ë¬¸ìëŠ” = " + rs);
 	
 	}
 	

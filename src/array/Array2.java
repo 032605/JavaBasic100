@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array2 {
 	public static void main(String[] args) {
-		//========¹è¿­ ¿ä¼Ò¿¡ µ¥ÀÌÅÍ °ª ³Ö±â
+		//========ë°°ì—´ ìš”ì†Œì— ë°ì´í„° ê°’ ë„£ê¸°
 		int[] array = new int[5];
 		
 		array[0] = 3;
@@ -22,34 +22,34 @@ public class Array2 {
 		System.out.println(array.length);			//5
 		System.out.println(array[array.length-1]);	//44
 		
-		//========¼±¾ğ ¹× ÃÊ±âÈ­
+		//========ì„ ì–¸ ë° ì´ˆê¸°í™”
 		int[] rows =  {1, 2, 3, 4, 5, 6};
-		int[] rows2 = new int[] {7, 8, 9}; //1¹ø ¹æ½Äº¸´Ù ºÒÆí. 
+		int[] rows2 = new int[] {7, 8, 9}; //1ë²ˆ ë°©ì‹ë³´ë‹¤ ë¶ˆí¸. 
 		
 		int[] err;
 		//err = {10, 11, 12);				//Err
 		
-		//new ¿¬»êÀÚ¿¡ ÀÇÇØ ¸Ş¸ğ¸® ÁÖ¼Ò °ªÀ» return
+		//new ì—°ì‚°ìì— ì˜í•´ ë©”ëª¨ë¦¬ ì£¼ì†Œ ê°’ì„ return
 		err = new int[] {10, 11, 12};
 		
 		System.out.println(rows[1]);	//2
 		System.out.println(rows2[1]);	//5
 		System.out.println(err[1]);		//8
 		
-		//========¹İº¹¹® »ç¿ë
-		System.out.println("¹İº¹¹®");
+		//========ë°˜ë³µë¬¸ ì‚¬ìš©
+		System.out.println("ë°˜ë³µë¬¸");
 		for (int i=0; i<rows.length; i++) {
 			System.out.print(rows[i] + " ");
 		}
 		
-		//========Çâ»óµÈ for¹® »ç¿ë
+		//========í–¥ìƒëœ forë¬¸ ì‚¬ìš©
 		System.out.println("");
-		System.out.println("Çâ»óµÈ for¹®");
+		System.out.println("í–¥ìƒëœ forë¬¸");
 		for (int rowfor:rows) {
 			System.out.print(rowfor + " ");
 		}
 			
-		//========¹İº¹¹® »ç¿ëÇÏÁö ¾Ê°í ¹è¿­ °ª Ãâ·Â : Arrays.toString()
+		//========ë°˜ë³µë¬¸ ì‚¬ìš©í•˜ì§€ ì•Šê³  ë°°ì—´ ê°’ ì¶œë ¥ : Arrays.toString()
 		System.out.println("");
 		System.out.println(Arrays.toString(rows));	//[1, 2, 3, 4, 5, 6]
 	

@@ -3,7 +3,7 @@ package function;
 public class CallByReference {
 
 	//Call by Reference
-	//Wrapper Å¬·¡½ºÀÇ Integer Å¬·¡½º Å¸ÀÔÀ¸·Î º¯¼ö a¸¦ ¼±¾ğÇÏ°í new °´Ã¼¸¦ »ı¼ºÇÏ¿© ÇØ´ç ÁÖ¼Ò °ªÀ» ¸Ş¼­µå·Î º¸³½´Ù. >> ±â´ÉÀûÀ¸·Î¸¸ Á¤´ä, »ç¿ëÀÚ ÇÔ¼ö »ı¼ºÇØ¼­ ÇØ¾ßÇÔ
+	//Wrapper í´ë˜ìŠ¤ì˜ Integer í´ë˜ìŠ¤ íƒ€ì…ìœ¼ë¡œ ë³€ìˆ˜ aë¥¼ ì„ ì–¸í•˜ê³  new ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ í•´ë‹¹ ì£¼ì†Œ ê°’ì„ ë©”ì„œë“œë¡œ ë³´ë‚¸ë‹¤. >> ê¸°ëŠ¥ì ìœ¼ë¡œë§Œ ì •ë‹µ, ì‚¬ìš©ì í•¨ìˆ˜ ìƒì„±í•´ì„œ í•´ì•¼í•¨
 	//Integer a = new Integer(100);
 	
 	int value;
@@ -13,7 +13,7 @@ public class CallByReference {
 	}
 
 	public static void plus(CallByReference x) {
-		//x °ª Ãâ·Â > ÁÖ¼Ò °ª
+		//x ê°’ ì¶œë ¥ > ì£¼ì†Œ ê°’
 		
 		x.value += 30;
 		
@@ -22,15 +22,15 @@ public class CallByReference {
 
 	public static void main(String[] args) {
 
-		//°´Ã¼ º¯¼ö ¼±¾ğ¡Ú
+		//ê°ì²´ ë³€ìˆ˜ ì„ ì–¸â˜…
 		CallByReference a = new CallByReference(20);
 	
-		System.out.println("plus() È£Ãâ Àü : a = " + a.value);	//20
+		System.out.println("plus() í˜¸ì¶œ ì „ : a = " + a.value);	//20
 	
-		plus(a);	//ÁÖ¼Ò¸¦ Àü´Ş
+		plus(a);	//ì£¼ì†Œë¥¼ ì „ë‹¬
 	
-		System.out.println("ÁÖ¼Ò °ª " + a);	//ÁÖ¼Ò °ª
-		System.out.println("plus() È£Ãâ ÈÄ : a = " + a.value);	//50
+		System.out.println("ì£¼ì†Œ ê°’ " + a);	//ì£¼ì†Œ ê°’
+		System.out.println("plus() í˜¸ì¶œ í›„ : a = " + a.value);	//50
 
 	}
 }
